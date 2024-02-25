@@ -1,0 +1,14 @@
+    df_foo = pd.read_excel(xlsx_path, sheet_name="Character Event")
+    df_bar = pd.read_excel(xlsx_path, sheet_name="Weapon Event")
+
+    df_foo['Time'] = pd.to_datetime(df_foo['Time'], errors='coerce')
+    df_bar['Time'] = pd.to_datetime(df_bar['Time'], errors='coerce')
+
+    df_foo['Sheet'] = 'Character Event'
+    df_bar['Sheet'] = 'Weapon Event'
+
+    df_foo_filter = df_foo[df_foo.iloc[:, 3] == 5]
+    df_bar_filter = df_bar[df_bar.iloc[:, 3] == 5]
+
+    merged_data = pd.concat([df_foo_filter, df_bar_filter], ignore_index=True)
+    merged_data.sort_values(by='Time', inplace=True)
