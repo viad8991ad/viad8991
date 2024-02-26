@@ -47,17 +47,13 @@ body {
 	}
 
     .element-card {
-	    display: flex;
-	    justify-content: center;
-	    flex-direction: column
-
-        height: 80px;
-	    width: 80px;
+        height: 40px;
+	    width: 100px;
     }
 
 	.element-image {
-	    height: auto;
-		margin: 0 0 0 0;
+	    height: 70px;
+		margin: -95px -90px -90px 0;
 	}
 }
 
@@ -68,14 +64,21 @@ body {
 		overflow: hidden;
 	}
 
+    .element-card {
+	    height: 50px;
+	    width: 120px;
+    }
+
 	.element-image {
-		margin: 0 0 0 0;
+	    height: 70px;
+		margin: -85px -90px -90px 0;
 	}
 }
 
 @media (max-width: 1400px) and (min-width: 1200px) {
 	.element-image {
-		margin: -120px -90px -90px -70px;
+	    height: 70px;
+		margin: -100px -90px -90px -50px;
 	}
 }
 
