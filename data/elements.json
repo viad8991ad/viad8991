@@ -1,30 +1,30 @@
 {
   "anemo": {
     "ru": "Анемо",
-    "src": "/static/img/element/Anemo.svg"
+    "src": "./static/img/element/Anemo.svg"
   },
   "geo": {
     "ru": "Гео",
-    "src": "/static/img/element/Geo.svg"
+    "src": "./static/img/element/Geo.svg"
   },
   "electro": {
     "ru": "электро",
-    "src": "/static/img/element/Electro.svg"
+    "src": "./static/img/element/Electro.svg"
   },
   "dendro": {
     "ru": "Дэндро",
-    "src": "/static/img/element/Dendro.svg"
+    "src": "./static/img/element/Dendro.svg"
   },
   "hydro": {
     "ru": "Гидро",
-    "src": "/static/img/element/Hydro.svg"
+    "src": "./static/img/element/Hydro.svg"
   },
   "pyro": {
     "ru": "Пиро",
-    "src": "/static/img/element/Pyro.svg"
+    "src": "./static/img/element/Pyro.svg"
   },
   "cryo": {
     "ru": "Крио",
-    "src": "/static/img/element/Cryo.svg"
+    "src": "./static/img/element/Cryo.svg"
   }
 }

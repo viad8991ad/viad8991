@@ -12,7 +12,7 @@ def prepare_ch_json():
             data[name.replace("_", " ")] = {
                 "element": "hydro",
                 "ru": "Е Лань",
-                "href": os.path.join("/static/img/characters", i)
+                "href": os.path.join("./static/img/characters", i)
             }
 
     with open("data/characters.json", "w", encoding="utf-8") as f:
@@ -45,6 +45,6 @@ def resize_main():
     print("resize_main is done")
 
 
-resize_main()
+# resize_main()
 # prepare_ch_json()
 print("all done")
