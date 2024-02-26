@@ -4,9 +4,9 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Pegasus</title>
-		<link rel="icon" href="img/itall.png" />
-		<link rel="stylesheet" href="./css/bootstrap.min.css" />
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="icon" href="/static/img/icon.webp" />
+		<link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/static/css/style.css" />
 	</head>
 	<body>
 		<nav class="navbar navbar-dark bg-dark fixed-top">
@@ -15,7 +15,7 @@
 			</div>
 		</nav>
 
-		<div class="padding-top h-100 gi-image">
+		<div class="padding-top h-100 main-image" style="background-image: url('/static/img/gi_index.webp')">
 			<div class="container">
 				<div class="row flex-row-reverse">
 					<div class="col-md-5 align-self-center">
@@ -31,110 +31,17 @@
 					<div class="col-12 mb-3 text-center">
 						<h2 class="fs-3 fs-sm-4 text-uppercase">Социальные сети</h2>
 					</div>
+					{% for name, value in social.items() %}
 					<div class="col-lg-5">
 						<a
 							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://www.youtube.com/"
+							href="{{ value['href'] }}"
 						>
-							<img
-								class="col-6 social-image pe-2"
-								src="img/social/youtube.svg"
-								alt="YouTube"
-							/>
-							<h4 class="m-0">You Tube</h4>
+							<img class="col-6 social-image pe-2" src="{{ value['src'] }}" alt="{{ name }}"/>
+							<h4 class="m-0">{{ name }}</h4>
 						</a>
 					</div>
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://www.twitch.tv/"
-						>
-							<img
-								class="col-6 social-image pe-2"
-								src="img/social/twitch.svg"
-								alt="Twitch"
-							/>
-							<h4 class="m-0">twitch</h4>
-						</a>
-					</div>
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://vk.com/"
-						>
-							<img
-								class="col-6 social-image pe-2"
-								src="img/social/vk.svg"
-								alt="VK"
-							/>
-							<h4 class="m-0">VK</h4>
-						</a>
-					</div>
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://open.spotify.com/"
-						>
-							<img
-								class="col-6 social-image pe-2"
-								src="img/social/spotify.svg"
-								alt="Spotify"
-							/>
-							<h4 class="m-0">Spotify</h4>
-						</a>
-					</div>
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://discord.com/"
-						>
-							<img
-								class="col-6 social-image pe-2"
-								src="img/social/discord.svg"
-								alt="Discord"
-							/>
-							<h4 class="m-0">Discord</h4>
-						</a>
-					</div>
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://instagram.com/"
-						>
-							<img
-								class="col-6 social-image pe-2"
-								src="img/social/instagram.svg"
-								alt="Instagram"
-							/>
-							<h4 class="m-0">Instagram</h4>
-						</a>
-					</div>
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://www.hoyolab.com/"
-						>
-							<img
-								class="col-6 social-image pe-2"
-								src="img/social/hoyolab.png"
-								alt="HoYoLAB"
-							/>
-							<h4 class="m-0">HoYoLAB</h4>
-						</a>
-					</div>
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://twitter.com/"
-						>
-							<img
-								class="col-6 social-image pe-2"
-								src="img/social/twitter.svg"
-								alt="X"
-							/>
-							<h4 class="m-0">X</h4>
-						</a>
-					</div>
+					{% endfor %}
 				</div>
 			</div>
 
@@ -145,131 +52,22 @@
 						<div class="row">
 							<div class="col-2">
 								<div class="list-group list-element nav-characters">
+									{% for name, img_path in elements.items()  -%}
 									<div
 										class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border"
 									>
-										<img
-											class="col-6 card-img element-image"
-											src="img/element/Pyro.svg"
-											alt="pyro"
-										/>
+										<img class="col-6 card-img element-image" src="{{ img_path }}" alt="pyro"/>
 										<a href="#pyro">
 											<div
 												class="card-img-overlay d-flex align-items-center justify-content-center"
 											>
-												<span
-													class="text-decoration-none text-uppercase text-black"
-												>
-													Пиро
+												<span class="text-decoration-none text-uppercase text-black">
+													{{ name }}
 												</span>
 											</div>
 										</a>
 									</div>
-
-									<div
-										class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border"
-									>
-										<img
-											class="col-6 card-img element-image"
-											src="img/element/Hydro.svg"
-											alt="hydro"
-										/>
-										<a href="#hydro">
-											<div
-												class="card-img-overlay d-flex align-items-center justify-content-center"
-											>
-												<span
-													class="text-decoration-none text-uppercase text-black"
-												>
-													Гидро
-												</span>
-											</div>
-										</a>
-									</div>
-
-									<div
-										class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border"
-									>
-										<img
-											class="col-6 card-img element-image"
-											src="img/element/Cryo.svg"
-											alt="cryo"
-										/>
-										<a href="#cryo">
-											<div
-												class="card-img-overlay d-flex align-items-center justify-content-center"
-											>
-												<span
-													class="text-decoration-none text-uppercase text-black"
-												>
-													Крио
-												</span>
-											</div>
-										</a>
-									</div>
-
-									<div
-										class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border"
-									>
-										<img
-											class="col-6 card-img element-image"
-											src="img/element/Electro.svg"
-											alt="electro"
-										/>
-										<a href="#electro">
-											<div
-												class="card-img-overlay d-flex align-items-center justify-content-center"
-											>
-												<span
-													class="text-decoration-none text-uppercase text-black"
-												>
-													Электро
-												</span>
-											</div>
-										</a>
-									</div>
-
-									<div
-										class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border"
-									>
-										<img
-											class="col-6 card-img element-image"
-											src="img/element/Geo.svg"
-											alt="geo"
-										/>
-										<a href="#geo">
-											<div
-												class="card-img-overlay d-flex align-items-center justify-content-center"
-											>
-												<span
-													class="text-decoration-none text-uppercase text-black"
-												>
-													Гео
-												</span>
-											</div>
-										</a>
-									</div>
-
-									<div
-										class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border"
-									>
-										<img
-											class="col-6 card-img element-image"
-											src="img/element/Anemo.svg"
-											alt="anemo"
-										/>
-										<a href="#anemo">
-											<div
-												class="card-img-overlay d-flex align-items-center justify-content-center"
-											>
-												<span
-													class="text-decoration-none text-uppercase text-black"
-												>
-													Анемо
-												</span>
-											</div>
-										</a>
-									</div>
+									{% endfor %}
 								</div>
 							</div>
 							<div class="col-10 element-characters">
@@ -277,7 +75,7 @@
 									<h4 class="col-sm-12 ps-4" id="pyro">Пиро</h4>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Bennett.png"
+											src="/static/img/characters/Bennett.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Беннет"
@@ -297,7 +95,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Diluc.png"
+											src="/static/img/characters/Diluc.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Дилюк"
@@ -318,7 +116,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Yoimiya.png"
+											src="/static/img/characters/Yoimiya.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Ёимия"
@@ -338,7 +136,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Klee.png"
+											src="/static/img/characters/Klee.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Кли"
@@ -359,7 +157,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Xinyan.png"
+											src="/static/img/characters/Xinyan.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Синь Янь"
@@ -380,7 +178,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Tohma.png"
+											src="/static/img/characters/Tohma.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Тома"
@@ -401,7 +199,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Xiangling.png"
+											src="/static/img/characters/Xiangling.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Сян Лин"
@@ -421,7 +219,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/HuTao.png"
+											src="/static/img/characters/HuTao.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Ху Тао"
@@ -441,7 +239,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Ambor.png"
+											src="/static/img/characters/Ambor.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Эмбер"
@@ -462,7 +260,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Feiyan.png"
+											src="/static/img/characters/Feiyan.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Янь Фэй"
@@ -485,7 +283,7 @@
 									<h4 class="col-sm-12 ps-4" id="hydro">Гидро</h4>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Ayato.png"
+											src="/static/img/characters/Ayato.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Аято"
@@ -506,7 +304,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Barbara.png"
+											src="/static/img/characters/Barbara.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Барбара"
@@ -527,7 +325,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Yelan.png"
+											src="/static/img/characters/Yelan.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Е Лань"
@@ -548,7 +346,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Kokomi.png"
+											src="/static/img/characters/Kokomi.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Кокоми"
@@ -568,7 +366,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Mona.png"
+											src="/static/img/characters/Mona.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Мона"
@@ -589,7 +387,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Xingqiu.png"
+											src="/static/img/characters/Xingqiu.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Син Цю"
@@ -609,7 +407,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Tartaglia.png"
+											src="/static/img/characters/Tartaglia.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Тарталья"
@@ -631,7 +429,7 @@
 									<h4 class="col-sm-12 ps-4" id="cryo">Крио</h4>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Ayaka.png"
+											src="/static/img/characters/Ayaka.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Аяка"
@@ -651,7 +449,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Ganyu.png"
+											src="/static/img/characters/Ganyu.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Гань Юй"
@@ -671,7 +469,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Diona.png"
+											src="/static/img/characters/Diona.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Диона"
@@ -691,7 +489,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Kaeya.png"
+											src="/static/img/characters/Kaeya.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Кэйа"
@@ -712,7 +510,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Rosaria.png"
+											src="/static/img/characters/Rosaria.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Розария"
@@ -732,7 +530,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Qiqi.png"
+											src="/static/img/characters/Qiqi.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Ци Ци"
@@ -753,7 +551,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Chongyun.png"
+											src="/static/img/characters/Chongyun.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Чун Юнь"
@@ -774,7 +572,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Shenhe.png"
+											src="/static/img/characters/Shenhe.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Шэнь Хэ"
@@ -794,7 +592,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Aloy.png"
+											src="/static/img/characters/Aloy.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Элой"
@@ -815,7 +613,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Eula.png"
+											src="/static/img/characters/Eula.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Эола"
@@ -837,7 +635,7 @@
 									<h4 class="col-sm-12 ps-4" id="electro">Электро</h4>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Beidou.png"
+											src="/static/img/characters/Beidou.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Бэй Доу"
@@ -857,7 +655,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Keqing.png"
+											src="/static/img/characters/Keqing.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Кэ Цин"
@@ -878,7 +676,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Lisa.png"
+											src="/static/img/characters/Lisa.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Лиза"
@@ -899,7 +697,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Shougun.png"
+											src="/static/img/characters/Shougun.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Райдэн"
@@ -919,7 +717,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Razor.png"
+											src="/static/img/characters/Razor.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Рэйзор"
@@ -940,7 +738,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Sara.png"
+											src="/static/img/characters/Sara.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Сара"
@@ -961,7 +759,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Fischl.png"
+											src="/static/img/characters/Fischl.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Фишль"
@@ -981,7 +779,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Yae.png"
+											src="/static/img/characters/Yae.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Яэ Мико"
@@ -1003,7 +801,7 @@
 									<h4 class="col-sm-12 ps-4" id="geo">Гео</h4>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Albedo.png"
+											src="/static/img/characters/Albedo.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Альбедо"
@@ -1023,7 +821,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Gorou.png"
+											src="/static/img/characters/Gorou.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Горо"
@@ -1044,7 +842,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Itto.png"
+											src="/static/img/characters/Itto.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Итто"
@@ -1065,7 +863,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Ningguang.png"
+											src="/static/img/characters/Ningguang.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Нин Гуан"
@@ -1086,7 +884,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Noel.png"
+											src="/static/img/characters/Noel.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Ноэлль"
@@ -1107,7 +905,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Zhongli.png"
+											src="/static/img/characters/Zhongli.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Чжун Ли"
@@ -1127,7 +925,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Yunjin.png"
+											src="/static/img/characters/Yunjin.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Юнь Цзинь"
@@ -1150,7 +948,7 @@
 									<h4 class="col-sm-12 ps-4" id="anemo">Анемо</h4>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Venti.png"
+											src="/static/img/characters/Venti.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Венти"
@@ -1170,7 +968,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Qin.png"
+											src="/static/img/characters/Qin.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Джинн"
@@ -1191,7 +989,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Kazuha.png"
+											src="/static/img/characters/Kazuha.png"
 											class="card-img-top"
 											loading="lazy"
 											alt="Кадзуха"
@@ -1211,7 +1009,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Sucrose.png"
+											src="/static/img/characters/Sucrose.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Сахароза"
@@ -1232,7 +1030,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Sayu.png"
+											src="/static/img/characters/Sayu.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Саю"
@@ -1253,7 +1051,7 @@
 									</div>
 									<div class="col-sm-3 card character-card mb-3 mx-4">
 										<img
-											src="img/characters/Xiao.png"
+											src="/static/img/characters/Xiao.png"
 											class="card-img-top grayscale"
 											loading="lazy"
 											alt="Сяо"
@@ -1267,6 +1065,28 @@
 												data-bs-target="#exampleModal"
 												disabled
 												data-bs-whatever="xiao.png"
+											>
+												Подробнее
+											</button>
+										</div>
+									</div>
+
+									<h4 class="col-sm-12 ps-4" id="dendro">Дэндро</h4>
+									<div class="col-sm-3 card character-card mb-3 mx-4">
+										<img
+											src="/static/img/characters/Venti.png"
+											class="card-img-top"
+											loading="lazy"
+											alt="Венти"
+										/>
+										<div class="card-body">
+											<h5 class="card-title">Венти</h5>
+											<button
+												type="button"
+												class="btn btn-success"
+												data-bs-toggle="modal"
+												data-bs-target="#exampleModal"
+												data-bs-whatever="venti.png"
 											>
 												Подробнее
 											</button>
@@ -1291,7 +1111,7 @@
 							<h4 class="col-sm-12 mt-4 mb-2">{{ values["print_name"] }}:</h4>
 
 							<div class="card element-card border rounded shadow-sm bg-body mb-3">
-								<img class="card-img wish-image" src="img/{{ values['type'] }}_molitva.png" alt="wish">
+								<img class="card-img wish-image" src="/static/img/{{ values['type'] }}_molitva.png" alt="wish">
 								<div class="card-img-overlay wish-card">
 									<table class="table m-0">
 										<tbody>
@@ -1369,7 +1189,7 @@
 					<li class="nav-item"><a href="#builds" class="nav-link px-2 text-muted">Сборки</a></li>
 					<li class="nav-item"><a href="#wish" class="nav-link px-2 text-muted">Молитвы</a></li>
 				</ul>
-				<p class="text-center text-muted">© 2022 ItAllCanWait.site</p>
+				<p class="text-center text-muted">© 2024 viad8991</p>
 			</div>
 		</footer>
 

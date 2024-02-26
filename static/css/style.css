@@ -6,8 +6,8 @@ body {
 	margin: 0;
 }
 
-.gi-image {
-	background-image: url("../img/gi_index.webp");
+.main-image {
+	/* background-image: url("../img/gi_index.webp"); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right top;
@@ -19,7 +19,7 @@ body {
 }
 
 @media (max-width: 992px) {
-	.gi-image {
+	.main-image {
 		background-position: top right -250px;
 	}
 }
