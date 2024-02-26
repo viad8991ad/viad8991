@@ -1,0 +1,34 @@
+{
+  "YouTube": {
+    "src": "/static/img/social/youtube.svg",
+    "href": "https://www.youtube.com/"
+  },
+  "Twitch": {
+    "src": "/static/img/social/twitch.svg",
+    "href": "https://www.twitch.tv/"
+  },
+  "VK": {
+    "src": "/static/img/social/vk.svg",
+    "href": "https://vk.com/"
+  },
+  "Spotify": {
+    "src": "/static/img/social/spotify.svg",
+    "href": "https://open.spotify.com/"
+  },
+  "Discord": {
+    "src": "/static/img/social/discord.svg",
+    "href": "https://discord.com/"
+  },
+  "Instagram": {
+    "src": "/static/img/social/instagram.svg",
+    "href": "https://instagram.com/"
+  },
+  "HoYoLAB": {
+    "src": "/static/img/social/hoyolab.png",
+    "href": "https://www.hoyolab.com/"
+  },
+  "X": {
+    "src": "/static/img/social/twitter.svg",
+    "href": "https://twitter.com/"
+  }
+}

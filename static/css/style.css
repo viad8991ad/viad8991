@@ -35,7 +35,7 @@ body {
 
 .element-image {
 	height: 80px;
-	margin: -120px -90px -90px -90px;
+	margin: -110px -90px -90px -80px;
 	position: relative;
 }
 
@@ -57,13 +57,20 @@ body {
 	}
 }
 
+.card-body {
+    padding: 0 0 0 0;
+}
+
 .character-card {
-	width: 18rem;
+	width: 19rem;
+	height: 30rem;
 	overflow: hidden;
 }
 
 .character-card img {
-	margin: 0 0 -18rem 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .grayscale {

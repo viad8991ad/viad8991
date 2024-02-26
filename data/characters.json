@@ -1,0 +1,393 @@
+{
+  "Sangonomiya Kokomi": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Sangonomiya_Kokomi_Resize_Wish_500_500.webp",
+    "grayscale": true
+  },
+  "Cyno": {
+    "element": "electro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Cyno_Resize_Wish_500_500.webp"
+  },
+  "Dehya": {
+    "element": "pyro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Dehya_Resize_Wish_500_500.webp"
+  },
+  "Sayu": {
+    "element": "anemo",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Sayu_Resize_Wish_500_500.webp"
+  },
+  "Gaming": {
+    "element": "pyro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Gaming_Resize_Wish_500_500.webp"
+  },
+  "Sucrose": {
+    "element": "anemo",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Sucrose_Resize_Wish_500_500.webp"
+  },
+  "Zhongli": {
+    "element": "geo",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Zhongli_Resize_Wish_500_500.webp"
+  },
+  "Furina": {
+    "element": "anemo",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Furina_Resize_Wish_500_500.webp"
+  },
+  "Yae Miko": {
+    "element": "electro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Yae_Miko_Resize_Wish_500_500.webp"
+  },
+  "Xiao": {
+    "element": "anemo",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Xiao_Resize_Wish_500_500.webp"
+  },
+  "Shenhe": {
+    "element": "cryo",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Shenhe_Resize_Wish_500_500.webp"
+  },
+  "Thoma": {
+    "element": "pyro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Thoma_Resize_Wish_500_500.webp"
+  },
+  "Venti": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Venti_Resize_Wish_500_500.webp"
+  },
+  "Kuki Shinobu": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Kuki_Shinobu_Resize_Wish_500_500.webp"
+  },
+  "Xinyan": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Xinyan_Resize_Wish_500_500.webp"
+  },
+  "Arataki Itto": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Arataki_Itto_Resize_Wish_500_500.webp"
+  },
+  "Bennett": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Bennett_Resize_Wish_500_500.webp"
+  },
+  "Tighnari": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Tighnari_Resize_Wish_500_500.webp"
+  },
+  "Diona": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Diona_Resize_Wish_500_500.webp"
+  },
+  "Raiden Shogun": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Raiden_Shogun_Resize_Wish_500_500.webp"
+  },
+  "Xingqiu": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Xingqiu_Resize_Wish_500_500.webp"
+  },
+  "Kaedehara Kazuha": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Kaedehara_Kazuha_Resize_Wish_500_500.webp"
+  },
+  "Wanderer": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Wanderer_Resize_Wish_500_500.webp"
+  },
+  "Yaoyao": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Yaoyao_Resize_Wish_500_500.webp"
+  },
+  "Yelan": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Yelan_Resize_Wish.webp"
+  },
+  "Hu Tao": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Hu_Tao_Resize_Wish_500_500.webp"
+  },
+  "Lisa": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Lisa_Resize_Wish_500_500.webp"
+  },
+  "Lynette": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Lynette_Resize_Wish_500_500.webp"
+  },
+  "Qiqi": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Qiqi_Resize_Wish_500_500.webp"
+  },
+  "Candace": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Candace_Resize_Wish_500_500.webp"
+  },
+  "Yun Jin": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Yun_Jin_Resize_Wish_500_500.webp"
+  },
+  "Razor": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Razor_Resize_Wish_500_500.webp"
+  },
+  "Kamisato Ayato": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Kamisato_Ayato_Resize_Wish_500_500.webp"
+  },
+  "Kirara": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Kirara_Resize_Wish_500_500.webp"
+  },
+  "Shikanoin Heizou": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Shikanoin_Heizou_Resize_Wish_500_500.webp"
+  },
+  "Wriothesley": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Wriothesley_Resize_Wish_500_500.webp"
+  },
+  "Layla": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Layla_Resize_Wish_500_500.webp"
+  },
+  "Freminet": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Freminet_Resize_Wish_500_500.webp"
+  },
+  "Mika": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Mika_Resize_Wish_500_500.webp"
+  },
+  "Albedo": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Albedo_Resize_Wish_500_500.webp"
+  },
+  "Mona": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Mona_Resize_Wish_500_500.webp"
+  },
+  "Kaveh": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Kaveh_Resize_Wish_500_500.webp"
+  },
+  "Klee": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Klee_Resize_Wish_500_500.webp"
+  },
+  "Aloy": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Aloy_Resize_Wish_500_500.webp"
+  },
+  "Tartaglia": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Tartaglia_Resize_Wish_500_500.webp"
+  },
+  "Barbara": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Barbara_Resize_Wish_500_500.webp"
+  },
+  "Chevreuse": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Chevreuse_Resize_Wish_500_500.webp"
+  },
+  "Yanfei": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Yanfei_Resize_Wish_500_500.webp"
+  },
+  "Diluc": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Diluc_Resize_Wish_500_500.webp"
+  },
+  "Noelle": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Noelle_Resize_Wish_500_500.webp"
+  },
+  "Nilou": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Nilou_Resize_Wish_500_500.webp"
+  },
+  "Rosaria": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Rosaria_Resize_Wish_500_500.webp"
+  },
+  "Jean": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Jean_Resize_Wish_500_500.webp"
+  },
+  "Beidou": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Beidou_Resize_Wish_500_500.webp"
+  },
+  "Collei": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Collei_Resize_Wish_500_500.webp"
+  },
+  "Charlotte": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Charlotte_Resize_Wish_500_500.webp"
+  },
+  "Navia": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Navia_Resize_Wish_500_500.webp"
+  },
+  "Dori": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Dori_Resize_Wish_500_500.webp"
+  },
+  "Amber": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Amber_Resize_Wish_500_500.webp"
+  },
+  "Faruzan": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Faruzan_Resize_Wish_500_500.webp"
+  },
+  "Kaeya": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Kaeya_Resize_Wish_500_500.webp"
+  },
+  "Kamisato Ayaka": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Kamisato_Ayaka_Resize_Wish_500_500.webp"
+  },
+  "Ganyu": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Ganyu_Resize_Wish_500_500.webp"
+  },
+  "Alhaitham": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Alhaitham_Resize_Wish_500_500.webp"
+  },
+  "Fischl": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Fischl_Resize_Wish_500_500.webp"
+  },
+  "Eula": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Eula_Resize_Wish_500_500.webp"
+  },
+  "Xiangling": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Xiangling_Resize_Wish_500_500.webp"
+  },
+  "Lyney": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Lyney_Resize_Wish_500_500.webp"
+  },
+  "Nahida": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Nahida_Resize_Wish_500_500.webp"
+  },
+  "Ningguang": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Ningguang_Resize_Wish_500_500.webp"
+  },
+  "Neuvillette": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Neuvillette_Resize_Wish_500_500.webp"
+  },
+  "Kujou Sara": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Kujou_Sara_Resize_Wish_500_500.webp"
+  },
+  "Keqing": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Keqing_Resize_Wish_500_500.webp"
+  },
+  "Xianyun": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Xianyun_Resize_Wish_500_500.webp"
+  },
+  "Baizhu": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Baizhu_Resize_Wish_500_500.webp"
+  },
+  "Gorou": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Gorou_Resize_Wish_500_500.webp"
+  },
+  "Yoimiya": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Yoimiya_Resize_Wish_500_500.webp"
+  },
+  "Chongyun": {
+    "element": "hydro",
+    "ru": "Е Лань",
+    "href": "/static/img/characters/Character_Chongyun_Resize_Wish_500_500.webp"
+  }
+}

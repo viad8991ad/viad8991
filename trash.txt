@@ -12,3 +12,34 @@
 
     merged_data = pd.concat([df_foo_filter, df_bar_filter], ignore_index=True)
     merged_data.sort_values(by='Time', inplace=True)
+
+https://static.wikia.nocookie.net/gensin-impact/images/c/c7/Character_Gaming_Full_Wish.png
+
+https://static.wikia.nocookie.net/gensin-impact/images/0/08/Character_Noelle_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Character_Qiqi_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/a/a3/Character_Raiden_Shogun_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Character_Razor_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Character_Rosaria_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/2/24/Character_Sangonomiya_Kokomi_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Character_Sayu_Full_Wish.png
+https://static.wikia.nocookie.net/gensin-impact/images/4/49/Character_Shenhe_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Character_Shikanoin_Heizou_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Character_Sucrose_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/a/af/Character_Tartaglia_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/8/8b/Character_Thoma_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/c/ce/Character_Tighnari_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Venti_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/d/de/Character_Wanderer_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/5/50/Character_Wriothesley_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/d/d9/Character_Xiangling_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Character_Xianyun_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/5/5d/Character_Xiao_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/a/ad/Character_Xingqiu_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/6/60/Character_Xinyan_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/4/49/Character_Yae_Miko_Full_Wish.png
+https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Character_Yanfei_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/6/62/Character_Yaoyao_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/2/23/Character_Yelan_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Yoimiya_Full_Wish.png
+https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Character_Yun_Jin_Full_Wish.png/
+https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Character_Zhongli_Full_Wish.png/
