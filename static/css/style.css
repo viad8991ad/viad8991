@@ -39,7 +39,29 @@ body {
 	position: relative;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
+    div.list-element > div > a > div > span {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+    .element-card {
+	    display: flex;
+	    justify-content: center;
+	    flex-direction: column
+
+        height: 80px;
+	    width: 80px;
+    }
+
+	.element-image {
+	    height: auto;
+		margin: 0 0 0 0;
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
 	div.list-element > div > a > div > span {
 		text-indent: 100%;
 		white-space: nowrap;
@@ -51,7 +73,7 @@ body {
 	}
 }
 
-@media (max-width: 1400px) and (min-width: 993px) {
+@media (max-width: 1400px) and (min-width: 1200px) {
 	.element-image {
 		margin: -120px -90px -90px -70px;
 	}
