@@ -39,6 +39,11 @@ body {
 	position: relative;
 }
 
+.wish-card {
+	overflow: hidden;
+	border: none;
+}
+
 @media (max-width: 767px) {
     div.list-element > div > a > div > span {
 		text-indent: 100%;
@@ -78,7 +83,7 @@ body {
 @media (max-width: 1400px) and (min-width: 1200px) {
 	.element-image {
 	    height: 70px;
-		margin: -100px -90px -90px -50px;
+		margin: -80px -90px -90px -50px;
 	}
 }
 
