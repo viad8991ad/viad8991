@@ -1,0 +1,314 @@
+{
+  "Kamisato Ayaka": {
+    "ru": "Аяка",
+    "element": "cryo"
+  },
+  "Jean": {
+    "ru": "Джинн",
+    "element": "anemo"
+  },
+  "Lisa": {
+    "ru": "Лиза",
+    "element": "electro"
+  },
+  "Barbara": {
+    "ru": "Барбара",
+    "element": "hydro"
+  },
+  "Kaeya": {
+    "ru": "Кэйа",
+    "element": "cryo"
+  },
+  "Diluc": {
+    "ru": "Дилюк",
+    "element": "pyro"
+  },
+  "Razor": {
+    "ru": "Рэйзор",
+    "element": "electro"
+  },
+  "Amber": {
+    "ru": "Эмбер",
+    "element": "pyro"
+  },
+  "Venti": {
+    "ru": "Венти",
+    "element": "anemo"
+  },
+  "Xiangling": {
+    "ru": "Сян Лин",
+    "element": "pyro"
+  },
+  "Beidou": {
+    "ru": "Бэй Доу",
+    "element": "electro"
+  },
+  "Xingqiu": {
+    "ru": "Син Цю",
+    "element": "hydro"
+  },
+  "Xiao": {
+    "ru": "Сяо",
+    "element": "anemo"
+  },
+  "Ningguang": {
+    "ru": "Нин Гуан",
+    "element": "geo"
+  },
+  "Klee": {
+    "ru": "Кли",
+    "element": "pyro"
+  },
+  "Zhongli": {
+    "ru": "Чжун Ли",
+    "element": "geo"
+  },
+  "Fischl": {
+    "ru": "Фишль",
+    "element": "electro"
+  },
+  "Bennett": {
+    "ru": "Беннет",
+    "element": "pyro"
+  },
+  "Tartaglia": {
+    "ru": "Тарталья",
+    "element": "hydro"
+  },
+  "Noelle": {
+    "ru": "Ноэлль",
+    "element": "geo"
+  },
+  "Qiqi": {
+    "ru": "Ци Ци",
+    "element": "cryo"
+  },
+  "Chongyun": {
+    "ru": "Чун Юнь",
+    "element": "cryo"
+  },
+  "Ganyu": {
+    "ru": "Гань Юй",
+    "element": "cryo"
+  },
+  "Albedo": {
+    "ru": "Альбедо",
+    "element": "geo"
+  },
+  "Diona": {
+    "ru": "Диона",
+    "element": "cryo"
+  },
+  "Mona": {
+    "ru": "Мона",
+    "element": "hydro"
+  },
+  "Keqing": {
+    "ru": "Кэ Цин",
+    "element": "electro"
+  },
+  "Sucrose": {
+    "ru": "Сахароза",
+    "element": "anemo"
+  },
+  "Xinyan": {
+    "ru": "Синь Янь",
+    "element": "anemo"
+  },
+  "Rosaria": {
+    "ru": "Розария",
+    "element": "cryo"
+  },
+  "Hu Tao": {
+    "ru": "Ху Тао",
+    "element": "pyro"
+  },
+  "Kaedehara Kazuha": {
+    "ru": "Кадзуха",
+    "element": "anemo"
+  },
+  "Yanfei": {
+    "ru": "Янь Фэй",
+    "element": "pyro"
+  },
+  "Yoimiya": {
+    "ru": "Еимия",
+    "element": "pyro"
+  },
+  "Thoma": {
+    "ru": "Тома",
+    "element": "pyro"
+  },
+  "Eula": {
+    "ru": "Эола",
+    "element": "cryo"
+  },
+  "Raiden Shogun": {
+    "ru": "Райдэн",
+    "element": "electro"
+  },
+  "Sayu": {
+    "ru": "Саю",
+    "element": "anemo"
+  },
+  "Sangonomiya Kokomi": {
+    "ru": "Кокоми",
+    "element": "hydro"
+  },
+  "Gorou": {
+    "ru": "Горо",
+    "element": "geo"
+  },
+  "Kujou Sara": {
+    "ru": "Сара",
+    "element": "electro"
+  },
+  "Arataki Itto": {
+    "ru": "Итто",
+    "element": "geo"
+  },
+  "Yae Miko": {
+    "ru": "Яэ Мико",
+    "element": "electro"
+  },
+  "Shikanoin Heizou": {
+    "ru": "Хэйдзо",
+    "element": "anemo"
+  },
+  "Yelan": {
+    "ru": "Е Лань",
+    "element": "hydro"
+  },
+  "Kirara": {
+    "ru": "Кирара",
+    "element": "dendro"
+  },
+  "Aloy": {
+    "ru": "Элой",
+    "element": "cryo"
+  },
+  "Shenhe": {
+    "ru": "Шэнь Хэ",
+    "element": "cryo"
+  },
+  "Yun Jin": {
+    "ru": "Юнь Цзинь",
+    "element": "geo"
+  },
+  "Kuki Shinobu": {
+    "ru": "Синобу",
+    "element": "electro"
+  },
+  "Kamisato Ayato": {
+    "ru": "Аято",
+    "element": "hydro"
+  },
+  "Collei": {
+    "ru": "Коллеи",
+    "element": "dendro"
+  },
+  "Dori": {
+    "ru": "Дори",
+    "element": "electro"
+  },
+  "Tighnari": {
+    "ru": "Тигнари",
+    "element": "dendro"
+  },
+  "Nilou": {
+    "ru": "Нилу",
+    "element": "hydro"
+  },
+  "Cyno": {
+    "ru": "Сайно",
+    "element": "electro"
+  },
+  "Candace": {
+    "ru": "Кандакия",
+    "element": "hydro"
+  },
+  "Nahida": {
+    "ru": "Нахида",
+    "element": "dendro"
+  },
+  "Layla": {
+    "ru": "Лайла",
+    "element": "cryo"
+  },
+  "Wanderer": {
+    "ru": "Странник",
+    "element": "anemo"
+  },
+  "Faruzan": {
+    "ru": "Фарузан",
+    "element": "anemo"
+  },
+  "Yaoyao": {
+    "ru": "Яо Яо",
+    "element": "dendro"
+  },
+  "Alhaitham": {
+    "ru": "Аль-Хайтам",
+    "element": "dendro"
+  },
+  "Dehya": {
+    "ru": "Дэхья",
+    "element": "pyro"
+  },
+  "Mika": {
+    "ru": "Мика",
+    "element": "cryo"
+  },
+  "Kaveh": {
+    "ru": "Кавех",
+    "element": "dendro"
+  },
+  "Baizhu": {
+    "ru": "Бай Чжу",
+    "element": "dendro"
+  },
+  "Lynette": {
+    "ru": "Линетт",
+    "element": "anemo"
+  },
+  "Lyney": {
+    "ru": "Лини",
+    "element": "pyro"
+  },
+  "Freminet": {
+    "ru": "Фремине",
+    "element": "cryo"
+  },
+  "Wriothesley": {
+    "ru": "Ризли",
+    "element": "cryo"
+  },
+  "Neuvillette": {
+    "ru": "Нёвиллет",
+    "element": "hydro"
+  },
+  "Charlotte": {
+    "ru": "Шарлотта",
+    "element": "cryo"
+  },
+  "Furina": {
+    "ru": "Фурина",
+    "element": "hydro"
+  },
+  "Chevreuse": {
+    "ru": "Шеврёз",
+    "element": "pyro"
+  },
+  "Navia": {
+    "ru": "Навия",
+    "element": "geo"
+  },
+  "Gaming": {
+    "ru": "Ка Мин",
+    "element": "pyro"
+  },
+  "Xianyun": {
+    "ru": "Сянь Юнь",
+    "element": "anemo"
+  }
+}

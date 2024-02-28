@@ -35,47 +35,47 @@
     "href": "./static/img/characters/Character_Shikanoin_Heizou_Resize_Wish_500_500.webp"
   },
   "Gaming": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Ка Мин",
     "href": "./static/img/characters/Character_Gaming_Resize_Wish_500_500.webp"
   },
   "Raiden Shogun": {
-    "element": "electro",
+    "element": "hydro",
     "ru": "Райдэн",
     "href": "./static/img/characters/Character_Raiden_Shogun_Resize_Wish_500_500.webp"
   },
   "Yaoyao": {
-    "element": "dendro",
+    "element": "hydro",
     "ru": "Яо Яо",
     "href": "./static/img/characters/Character_Yaoyao_Resize_Wish_500_500.webp"
   },
   "Shenhe": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Шэнь Хэ",
     "href": "./static/img/characters/Character_Shenhe_Resize_Wish_500_500.webp"
   },
   "Layla": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Лайла",
     "href": "./static/img/characters/Character_Layla_Resize_Wish_500_500.webp"
   },
   "Xinyan": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Синь Янь",
     "href": "./static/img/characters/Character_Xinyan_Resize_Wish_500_500.webp"
   },
   "Kujou Sara": {
-    "element": "electro",
+    "element": "hydro",
     "ru": "Сара",
     "href": "./static/img/characters/Character_Kujou_Sara_Resize_Wish_500_500.webp"
   },
   "Navia": {
-    "element": "geo",
+    "element": "hydro",
     "ru": "Навия",
     "href": "./static/img/characters/Character_Navia_Resize_Wish_500_500.webp"
   },
   "Albedo": {
-    "element": "geo",
+    "element": "hydro",
     "ru": "Альбедо",
     "href": "./static/img/characters/Character_Albedo_Resize_Wish_500_500.webp"
   },
@@ -85,22 +85,22 @@
     "href": "./static/img/characters/Character_Nilou_Resize_Wish_500_500.webp"
   },
   "Keqing": {
-    "element": "electro",
+    "element": "hydro",
     "ru": "Кэ Цин",
     "href": "./static/img/characters/Character_Keqing_Resize_Wish_500_500.webp"
   },
   "Yun Jin": {
-    "element": "geo",
+    "element": "hydro",
     "ru": "Юнь Цзинь",
     "href": "./static/img/characters/Character_Yun_Jin_Resize_Wish_500_500.webp"
   },
   "Wriothesley": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Ризли",
     "href": "./static/img/characters/Character_Wriothesley_Resize_Wish_500_500.webp"
   },
   "Xianyun": {
-    "element": "anemo",
+    "element": "hydro",
     "ru": "Сянь Юнь",
     "href": "./static/img/characters/Character_Xianyun_Resize_Wish_500_500.webp"
   },
@@ -110,27 +110,27 @@
     "href": "./static/img/characters/Character_Xingqiu_Resize_Wish_500_500.webp"
   },
   "Faruzan": {
-    "element": "anemo",
+    "element": "hydro",
     "ru": "Фарузан",
     "href": "./static/img/characters/Character_Faruzan_Resize_Wish_500_500.webp"
   },
   "Mika": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Мика",
     "href": "./static/img/characters/Character_Mika_Resize_Wish_500_500.webp"
   },
   "Kaeya": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Кэйа",
     "href": "./static/img/characters/Character_Kaeya_Resize_Wish_500_500.webp"
   },
   "Wanderer": {
-    "element": "anemo",
+    "element": "hydro",
     "ru": "Странник",
     "href": "./static/img/characters/Character_Wanderer_Resize_Wish_500_500.webp"
   },
   "Xiao": {
-    "element": "anemo",
+    "element": "hydro",
     "ru": "Сяо",
     "href": "./static/img/characters/Character_Xiao_Resize_Wish_500_500.webp"
   },
@@ -140,12 +140,12 @@
     "href": "./static/img/characters/Character_Neuvillette_Resize_Wish_500_500.webp"
   },
   "Bennett": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Беннет",
     "href": "./static/img/characters/Character_Bennett_Resize_Wish_500_500.webp"
   },
   "Freminet": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Фремине",
     "href": "./static/img/characters/Character_Freminet_Resize_Wish_500_500.webp"
   },
@@ -155,7 +155,7 @@
     "href": "./static/img/characters/Character_Furina_Resize_Wish_500_500.webp"
   },
   "Baizhu": {
-    "element": "dendro",
+    "element": "hydro",
     "ru": "Бай Чжу",
     "href": "./static/img/characters/Character_Baizhu_Resize_Wish_500_500.webp"
   },
@@ -170,17 +170,17 @@
     "href": "./static/img/characters/Character_Barbara_Resize_Wish_500_500.webp"
   },
   "Kirara": {
-    "element": "dendro",
+    "element": "hydro",
     "ru": "Кирара",
     "href": "./static/img/characters/Character_Kirara_Resize_Wish_500_500.webp"
   },
   "Razor": {
-    "element": "electro",
+    "element": "hydro",
     "ru": "Рэйзор",
     "href": "./static/img/characters/Character_Razor_Resize_Wish_500_500.webp"
   },
   "Klee": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Кли",
     "href": "./static/img/characters/Character_Klee_Resize_Wish_500_500.webp"
   },
@@ -190,52 +190,52 @@
     "href": "./static/img/characters/Character_Candace_Resize_Wish_500_500.webp"
   },
   "Alhaitham": {
-    "element": "dendro",
+    "element": "hydro",
     "ru": "Аль-Хайтам",
     "href": "./static/img/characters/Character_Alhaitham_Resize_Wish_500_500.webp"
   },
   "Kaveh": {
-    "element": "dendro",
+    "element": "hydro",
     "ru": "Кавех",
     "href": "./static/img/characters/Character_Kaveh_Resize_Wish_500_500.webp"
   },
   "Kuki Shinobu": {
-    "element": "electro",
+    "element": "hydro",
     "ru": "Синобу",
     "href": "./static/img/characters/Character_Kuki_Shinobu_Resize_Wish_500_500.webp"
   },
   "Zhongli": {
-    "element": "geo",
+    "element": "hydro",
     "ru": "Чжун Ли",
     "href": "./static/img/characters/Character_Zhongli_Resize_Wish_500_500.webp"
   },
   "Ganyu": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Гань Юй",
     "href": "./static/img/characters/Character_Ganyu_Resize_Wish_500_500.webp"
   },
   "Kamisato Ayaka": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Аяка",
     "href": "./static/img/characters/Character_Kamisato_Ayaka_Resize_Wish_500_500.webp"
   },
   "Dori": {
-    "element": "electro",
+    "element": "hydro",
     "ru": "Дори",
     "href": "./static/img/characters/Character_Dori_Resize_Wish_500_500.webp"
   },
   "Noelle": {
-    "element": "geo",
+    "element": "hydro",
     "ru": "Ноэлль",
     "href": "./static/img/characters/Character_Noelle_Resize_Wish_500_500.webp"
   },
   "Sucrose": {
-    "element": "anemo",
+    "element": "hydro",
     "ru": "Сахароза",
     "href": "./static/img/characters/Character_Sucrose_Resize_Wish_500_500.webp"
   },
   "Dehya": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Дэхья",
     "href": "./static/img/characters/Character_Dehya_Resize_Wish_500_500.webp"
   },
@@ -245,27 +245,27 @@
     "href": "./static/img/characters/Character_Tartaglia_Resize_Wish_500_500.webp"
   },
   "Kaedehara Kazuha": {
-    "element": "anemo",
+    "element": "hydro",
     "ru": "Кадзуха",
     "href": "./static/img/characters/Character_Kaedehara_Kazuha_Resize_Wish_500_500.webp"
   },
   "Diluc": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Дилюк",
     "href": "./static/img/characters/Character_Diluc_Resize_Wish_500_500.webp"
   },
   "Cyno": {
-    "element": "electro",
+    "element": "hydro",
     "ru": "Сайно",
     "href": "./static/img/characters/Character_Cyno_Resize_Wish_500_500.webp"
   },
   "Amber": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Эмбер",
     "href": "./static/img/characters/Character_Amber_Resize_Wish_500_500.webp"
   },
   "Rosaria": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Розария",
     "href": "./static/img/characters/Character_Rosaria_Resize_Wish_500_500.webp"
   },
@@ -275,37 +275,37 @@
     "href": "./static/img/characters/Character_Sangonomiya_Kokomi_Resize_Wish_500_500.webp"
   },
   "Lisa": {
-    "element": "electro",
+    "element": "hydro",
     "ru": "Лиза",
     "href": "./static/img/characters/Character_Lisa_Resize_Wish_500_500.webp"
   },
   "Venti": {
-    "element": "anemo",
+    "element": "hydro",
     "ru": "Венти",
     "href": "./static/img/characters/Character_Venti_Resize_Wish_500_500.webp"
   },
   "Yanfei": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Янь Фэй",
     "href": "./static/img/characters/Character_Yanfei_Resize_Wish_500_500.webp"
   },
   "Hu Tao": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Ху Тао",
     "href": "./static/img/characters/Character_Hu_Tao_Resize_Wish_500_500.webp"
   },
   "Lynette": {
-    "element": "anemo",
+    "element": "hydro",
     "ru": "Линетт",
     "href": "./static/img/characters/Character_Lynette_Resize_Wish_500_500.webp"
   },
   "Gorou": {
-    "element": "geo",
+    "element": "hydro",
     "ru": "Горо",
     "href": "./static/img/characters/Character_Gorou_Resize_Wish_500_500.webp"
   },
   "Eula": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Эола",
     "href": "./static/img/characters/Character_Eula_Resize_Wish_500_500.webp"
   },
@@ -315,47 +315,47 @@
     "href": "./static/img/characters/Character_Kamisato_Ayato_Resize_Wish_500_500.webp"
   },
   "Thoma": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Тома",
     "href": "./static/img/characters/Character_Thoma_Resize_Wish_500_500.webp"
   },
   "Sayu": {
-    "element": "anemo",
+    "element": "hydro",
     "ru": "Саю",
     "href": "./static/img/characters/Character_Sayu_Resize_Wish_500_500.webp"
   },
   "Qiqi": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Ци Ци",
     "href": "./static/img/characters/Character_Qiqi_Resize_Wish_500_500.webp"
   },
   "Arataki Itto": {
-    "element": "geo",
+    "element": "hydro",
     "ru": "Итто",
     "href": "./static/img/characters/Character_Arataki_Itto_Resize_Wish_500_500.webp"
   },
   "Fischl": {
-    "element": "electro",
+    "element": "hydro",
     "ru": "Фишль",
     "href": "./static/img/characters/Character_Fischl_Resize_Wish_500_500.webp"
   },
   "Aloy": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Элой",
     "href": "./static/img/characters/Character_Aloy_Resize_Wish_500_500.webp"
   },
   "Lyney": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Лини",
     "href": "./static/img/characters/Character_Lyney_Resize_Wish_500_500.webp"
   },
   "Tighnari": {
-    "element": "dendro",
+    "element": "hydro",
     "ru": "Тигнари",
     "href": "./static/img/characters/Character_Tighnari_Resize_Wish_500_500.webp"
   },
   "Yoimiya": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Еимия",
     "href": "./static/img/characters/Character_Yoimiya_Resize_Wish_500_500.webp"
   },
@@ -365,27 +365,27 @@
     "href": "./static/img/characters/Character_Yelan_Resize_Wish_500_500.webp"
   },
   "Chongyun": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Чун Юнь",
     "href": "./static/img/characters/Character_Chongyun_Resize_Wish_500_500.webp"
   },
   "Nahida": {
-    "element": "dendro",
+    "element": "hydro",
     "ru": "Нахида",
     "href": "./static/img/characters/Character_Nahida_Resize_Wish_500_500.webp"
   },
   "Diona": {
-    "element": "cryo",
+    "element": "hydro",
     "ru": "Диона",
     "href": "./static/img/characters/Character_Diona_Resize_Wish_500_500.webp"
   },
   "Chevreuse": {
-    "element": "pyro",
+    "element": "hydro",
     "ru": "Шеврёз",
     "href": "./static/img/characters/Character_Chevreuse_Resize_Wish_500_500.webp"
   },
   "Ningguang": {
-    "element": "geo",
+    "element": "hydro",
     "ru": "Нин Гуан",
     "href": "./static/img/characters/Character_Ningguang_Resize_Wish_500_500.webp"
   }

@@ -14,6 +14,10 @@ CHARACTERS = "characters.json"
 
 
 def build(win_stat: dict):
+    os.makedirs(BUILD_PATH, exist_ok=True)
+
+    jinja = Environment(loader=FileSystemLoader(TEMPLATE_PATH))
+
     with open(os.path.join(DATA_PATH, ELEMENTS_NAME)) as f:
         elements = json.load(f)
     with open(os.path.join(DATA_PATH, SOCIAL_NAME)) as f:
@@ -21,17 +25,20 @@ def build(win_stat: dict):
     with open(os.path.join(DATA_PATH, CHARACTERS)) as f:
         characters = json.load(f)
 
-    os.makedirs(BUILD_PATH, exist_ok=True)
-    jinja = Environment(loader=FileSystemLoader(TEMPLATE_PATH))
+    result = {}
+    for key, value in elements.items():
+        value["characters"] = []
+        result[key] = value
 
-    characters = sorted(characters.items(), key=lambda x: x[1]["element"])
-    characters = {k: dict(sorted(v.items())) for k, v in characters}
+    characters = dict(sorted(characters.items(), key=lambda x: x[1]["ru"]))
+
+    for key, values in characters.items():
+        result[values["element"]]["characters"].append({key: values})
 
     render_data = {
         "win_stat": win_stat,
-        "elements": elements,
         "social": social,
-        "characters": characters
+        "data": result
     }
     content = jinja.get_template(INDEX_NAME).render(**render_data)
 

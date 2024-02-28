@@ -52,7 +52,7 @@
 						<div class="row">
 							<div class="col-2">
 								<div class="list-group list-element nav-characters">
-									{% for name, value in elements.items()  %}
+									{% for name, value in data.items()  %}
 									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
 										<img class="col-6 card-img element-image" src="{{ value['src'] }}" alt="{{ name }}"/>
 										<a href="#{{ name }}">
@@ -68,22 +68,21 @@
 							</div>
 							<div class="col-10 element-characters">
 								<div class="row row-cols-4 justify-content-evenly">
-									{% set element_namespace = namespace(element="") %}
-									{% for name, values in characters.items() %}
-										{% if element_namespace.element != values["element"] %}
-											{% set element_namespace.element = values["element"] %}
-									<h4 class="col-sm-12 ps-4" id="{{ values['element'] }}">{{ values["element"] }}</h4>
-										{% endif %}
-
+									{% for element, element_values in data.items() %}
+									<h4 class="col-sm-12 ps-4" id="{{ element }}">{{ element_values["ru"] }}</h4>
+										{% for character in element_values["characters"] %}
+											{% for name, character_value in character.items(): %}
 									<div class="card character-card col-sm-3 mb-3 mx-4">
 										<img
-												class="card-img-top{{ ' grayscale' if values['grayscale'] else '' }}"
-												src="{{ values['href'] }}" alt="{{ name }}" loading="lazy"/>
+												class="card-img-top{{ ' grayscale' if character_value['grayscale'] else '' }}"
+												src="{{ character_value['href'] }}" alt="{{ name }}" loading="lazy"/>
 										<div class="card-body">
-											<h5 class="card-title">{{ name }}</h5>
+											<h5 class="card-title">{{ character_value["ru"] }}</h5>
 											 {# <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="bennet.png">Подробнее</button> --> #}
 										</div>
 									</div>
+											{% endfor %}
+										{% endfor %}
 									{% endfor %}
 								</div>
 							</div>
@@ -103,7 +102,7 @@
 
 							<h4 class="col-sm-12 mt-4 mb-2">{{ values["print_name"] }}:</h4>
 
-							<div class="card element-card border rounded shadow-sm bg-body mb-3">
+							<div class="card wish-card border rounded shadow-sm bg-body mb-3">
 								<img class="card-img wish-image" src="./static/img/{{ values['type'] }}_molitva.png" alt="wish">
 								<div class="card-img-overlay wish-card">
 									<table class="table m-0">

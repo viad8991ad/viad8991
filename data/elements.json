@@ -8,7 +8,7 @@
     "src": "./static/img/element/Geo.svg"
   },
   "electro": {
-    "ru": "электро",
+    "ru": "Электро",
     "src": "./static/img/element/Electro.svg"
   },
   "dendro": {
