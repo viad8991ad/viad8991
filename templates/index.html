@@ -9,9 +9,12 @@
 		<link rel="stylesheet" href="./static/css/style.css" />
 	</head>
 	<body>
-		<nav class="navbar navbar-dark bg-dark fixed-top">
-			<div class="container">
-				<span class="navbar-brand mb-0 h1">Pegasus</span>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex flex-row justify-content-between px-3">
+			<a class="navbar-brand mb-0 h1" href="#">Pegasus</a>
+			<div class="navbar-nav">
+				<a class="nav-link" href="#social">Социальные сети</a>
+				<a class="nav-link" href="#wish">Молитвы</a>
+				<a class="nav-link" href="#builds">Сборки</a>
 			</div>
 		</nav>
 
@@ -42,52 +45,6 @@
 						</a>
 					</div>
 					{% endfor %}
-				</div>
-			</div>
-
-			<div id="builds" class="container mt-5 border-top">
-				<div class="row justify-content-center gy-4 gx-lg-4 mt-5">
-					<div class="col-12 mb-3">
-						<h2 class="fs-3 fs-sm-4 text-center text-uppercase">Сборки</h2>
-						<div class="row">
-							<div class="col-2">
-								<div class="list-group list-element nav-characters">
-									{% for name, value in data.items()  %}
-									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
-										<img class="col-6 card-img element-image" src="{{ value['src'] }}" alt="{{ name }}"/>
-										<a href="#{{ name }}">
-											<div class="card-img-overlay d-flex align-items-center justify-content-end">
-												<span class="text-decoration-none text-uppercase text-black">
-													{{ value["ru"] }}
-												</span>
-											</div>
-										</a>
-									</div>
-									{% endfor %}
-								</div>
-							</div>
-							<div class="col-10 element-characters">
-								<div class="row row-cols-4 justify-content-evenly">
-									{% for element, element_values in data.items() %}
-									<h4 class="col-sm-12 ps-4" id="{{ element }}">{{ element_values["ru"] }}</h4>
-										{% for character in element_values["characters"] %}
-											{% for name, character_value in character.items(): %}
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top{{ ' grayscale' if character_value['grayscale'] else '' }}"
-												src="{{ character_value['href'] }}" alt="{{ name }}" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">{{ character_value["ru"] }}</h5>
-											 {# <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="bennet.png">Подробнее</button> --> #}
-										</div>
-									</div>
-											{% endfor %}
-										{% endfor %}
-									{% endfor %}
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 
@@ -156,12 +113,51 @@
 				</div>
 			</div>
 
-			<!-- <button -->
-			<!--   type="button" class="btn btn-primary collapsed" data-bs-toggle="collapse"-->
-			<!--   data-bs-target="#wish" aria-expanded="false" aria-controls="wish"-->
-			<!--   style="max-width: 250px"-->
-			<!-- >-->
-			<!-- </button>-->
+			<div id="builds" class="container mt-5 border-top">
+				<div class="row justify-content-center gy-4 gx-lg-4 mt-5">
+					<div class="col-12 mb-3">
+						<h2 class="fs-3 fs-sm-4 text-center text-uppercase">Сборки</h2>
+						<div class="row">
+							<div class="col-2">
+								<div class="list-group list-element nav-characters">
+									{% for name, value in data.items()  %}
+									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
+										<img class="col-6 card-img element-image" src="{{ value['src'] }}" alt="{{ name }}"/>
+										<a href="#{{ name }}">
+											<div class="card-img-overlay d-flex align-items-center justify-content-end">
+												<span class="text-decoration-none text-uppercase text-black">
+													{{ value["ru"] }}
+												</span>
+											</div>
+										</a>
+									</div>
+									{% endfor %}
+								</div>
+							</div>
+							<div class="col-10 element-characters">
+								{% for element, element_values in data.items() %}
+								<h4 class="col-sm-12 ps-4" id="{{ element }}">{{ element_values["ru"] }}</h4>
+								<div class="row row-cols-4 justify-content-evenly">
+										{% for character in element_values["characters"] %}
+											{% for name, character_value in character.items(): %}
+									<div class="card character-card col-sm-3 mb-3 mx-4">
+										<img
+												class="card-img-top{{ ' grayscale' if character_value['grayscale'] else '' }}"
+												src="{{ character_value['href'] }}" alt="{{ name }}" loading="lazy"/>
+										<div class="card-body">
+											<h5 class="card-title">{{ character_value["ru"] }}</h5>
+											 {# <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="bennet.png">Подробнее</button> --> #}
+										</div>
+									</div>
+											{% endfor %}
+										{% endfor %}
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<div class="modal fade" id="exampleModal" tabindex="-1">
 				<div class="modal-dialog modal-dialog-centered">
@@ -178,8 +174,8 @@
 			<div class="container">
 				<ul class="nav justify-content-center border-bottom pb-3 mb-3">
 					<li class="nav-item"><a href="#social" class="nav-link px-2 text-muted">Социальные сети</a></li>
-					<li class="nav-item"><a href="#builds" class="nav-link px-2 text-muted">Сборки</a></li>
 					<li class="nav-item"><a href="#wish" class="nav-link px-2 text-muted">Молитвы</a></li>
+					<li class="nav-item"><a href="#builds" class="nav-link px-2 text-muted">Сборки</a></li>
 				</ul>
 				<p class="text-center text-muted">© 2024 viad8991</p>
 			</div>
