@@ -1,0 +1,193 @@
+/*https://icon-icons.com/ru/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/youtube*/
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.main-image {
+	/* background-image: url("../img/gi_index.webp"); */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 992px) {
+	.main-image {
+		background-position: top right -250px;
+	}
+}
+
+.social-image {
+	width: 64px;
+}
+
+.element-card {
+	overflow: hidden;
+	border: none;
+}
+
+.element-image {
+	height: 80px;
+	margin: -110px -90px -90px -80px;
+	position: relative;
+}
+
+.wish-card {
+	overflow: hidden;
+	border: none;
+}
+
+@media (max-width: 767px) {
+    div.list-element > div > a > div > span {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+    .element-card {
+        height: 40px;
+	    width: 100px;
+    }
+
+	.element-image {
+	    height: 70px;
+		margin: -95px -90px -90px 0;
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+	div.list-element > div > a > div > span {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+    .element-card {
+	    height: 50px;
+	    width: 120px;
+    }
+
+	.element-image {
+	    height: 70px;
+		margin: -85px -90px -90px 0;
+	}
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+	.element-image {
+	    height: 70px;
+		margin: -80px -90px -90px -50px;
+	}
+}
+
+.card-body {
+    padding: 0 0 0 0;
+}
+
+.character-card {
+	width: 19rem;
+	height: 30rem;
+	overflow: hidden;
+}
+
+.character-card img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.grayscale {
+	filter: grayscale(100%);
+}
+
+@media (min-width: 576px) {
+	.modal-dialog {
+		max-width: 80rem;
+		margin: 1.75rem auto;
+	}
+}
+
+.btn-purple {
+	color: white;
+	background-color: #6f42c1;
+	border-color: #6f42c1;
+}
+
+.btn.btn-purple:hover {
+	color: white;
+	background-color: #784bc6;
+	border-color: #784bc6;
+}
+
+.btn.btn-purple:focus {
+	color: white;
+	background-color: #784bc6;
+	border-color: #784bc6;
+	box-shadow: 0 0 0 .25rem #a88bda;
+}
+
+.btn-teal {
+	color: black;
+	background-color: #20c997;
+	border-color: #20c997;
+}
+
+.btn.btn-teal:hover {
+	color: black;
+	background-color: #32d2a3;
+	border-color: #32d2a3;
+}
+
+.btn.btn-teal:focus {
+	color: black;
+	background-color: #32d2a3;
+	border-color: #32d2a3;
+	box-shadow: 0 0 0 .25rem #82e3c6;
+}
+
+.nav-characters {
+	position: sticky;
+	top: 5em;
+}
+
+.wish-card {
+	position: relative;
+}
+
+.wish-image {
+	position: absolute;
+	margin: 80px 0 0 450px;
+	width: 250px;
+	opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+	.wish-image {
+		margin: 80px 0 0 300px !important;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+	.wish-image {
+		margin: 80px 0 0 160px !important;
+	}
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+	.wish-image {
+		margin: 80px 0 0 270px !important;
+	}
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+	.wish-image {
+		margin: 80px 0 0 360px !important;
+	}
+}

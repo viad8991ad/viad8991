@@ -17,7 +17,7 @@ def prepare_ch_json():
                 "href": os.path.join("./static/img/characters", i)
             }
 
-    with open("data/characters.json", "w", encoding="utf-8") as f:
+    with open("data/gi/characters.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False)
 
     print("prepare_ch_json is done")
@@ -47,7 +47,7 @@ def prepare_ch_json():
 #     print("resize_main is done")
 
 def foo():
-    with open("data/characters_data.json", "r") as f:
+    with open("data/gi/characters_data.json", "r") as f:
         characters_data = json.load(f)
 
     result = {}
@@ -57,21 +57,21 @@ def foo():
             "element": ""
         }
 
-    with open("data/characters_data.json", "w", encoding="utf-8") as f:
+    with open("data/gi/characters_data.json", "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False)
 
 
-with open("data/elements.json") as f:
+with open("data/gi/elements.json") as f:
     elements = json.load(f)
-with open("data/characters.json") as f:
+with open("data/gi/characters.json") as f:
     characters = json.load(f)
-with open("data/characters_data.json") as f:
+with open("data/gi/characters_data.json") as f:
     characters_data = json.load(f)
 
 for key, values in characters_data.items():
     characters[key]["element"] = values["element"]
 
-with open("data/characters.json", "w", encoding="utf-8") as f:
+with open("data/gi/characters.json", "w", encoding="utf-8") as f:
     json.dump(characters, f, ensure_ascii=False)
 
 # print(characters)

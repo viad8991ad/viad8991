@@ -12,8 +12,8 @@ empty_roll = [{
     'print_name': '(´•︵•`)',
     'time': datetime.now().strftime("%d.%m.%Y"),
 }]
-xlsx_path = "./data/paimonmoe_wish_history.xlsx"
-with open("./data/ru.json", "r") as f:
+xlsx_path = "data/gi/paimonmoe_wish_history.xlsx"
+with open("data/gi/ru.json", "r") as f:
     en_ru = json.load(f)
 
 

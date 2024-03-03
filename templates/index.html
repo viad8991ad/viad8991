@@ -7,181 +7,70 @@
 		<link rel="icon" href="./static/img/icon.webp" />
 		<link rel="stylesheet" href="./static/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="./static/css/style.css" />
+
+		<style>
+			.main {
+				padding: 60px 15px 0;
+			}
+
+			.main__img {
+				width: 320px;
+				height: 240px;
+				border-radius: 120px;
+			}
+
+			.main__desc {
+				width: 420px;
+				height: 240px;
+				border-radius: 120px;
+			}
+
+			.bg-gray {
+				background-color: #dee2e6;
+			}
+		</style>
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex flex-row justify-content-between px-3">
-			<a class="navbar-brand mb-0 h1" href="#">Pegasus</a>
-			<div class="navbar-nav">
-				<a class="nav-link" href="#social">Социальные сети</a>
-				<a class="nav-link" href="#wish">Молитвы</a>
-				<a class="nav-link" href="#builds">Сборки</a>
-			</div>
-		</nav>
-
-		<div class="padding-top h-100 main-image" style="background-image: url('./static/img/gi_index.webp')">
-			<div class="container">
-				<div class="row flex-row-reverse">
-					<div class="col-md-5 align-self-center">
-						<h1 class="text-uppercase">кокомимейн снг</h1>
-					</div>
+    <body>
+		<header class="container fixed-top">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex flex-row justify-content-between px-3">
+				<a class="navbar-brand mb-0 h1" href="#">Pegasus</a>
+				<div class="navbar-nav">
+					<a class="nav-link" href="/gi.html">GI</a>
+					<a class="nav-link" href="/hsr.html">HSR</a>
 				</div>
-			</div>
-		</div>
+			</nav>
+		</header>
 
-		<main>
-			<div id="social" class="container border-top">
-				<div class="row justify-content-center gy-4 gx-lg-4 mt-5">
-					<div class="col-12 mb-3 text-center">
-						<h2 class="fs-3 fs-sm-4 text-uppercase">Социальные сети</h2>
-					</div>
-					{% for name, value in social.items() %}
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="{{ value['href'] }}"
-						>
-							<img class="col-6 social-image pe-2" src="{{ value['src'] }}" alt="{{ name }}"/>
-							<h4 class="m-0">{{ name }}</h4>
-						</a>
-					</div>
-					{% endfor %}
-				</div>
-			</div>
-
-			<div id="wish" class="container mt-5 border-top">
-				<div class="row justify-content-center gy-4 gx-lg-4 mt-5">
-					<div class="col-12 mb-3 text-center">
-						<h2 class="fs-3 fs-sm-4 text-uppercase">Молитвы</h2>
-					</div>
-					<div class="row justify-content-around">
-						{% for name, values in win_stat.items() -%}
-						<div class="col-md-6">
-
-							<h4 class="col-sm-12 mt-4 mb-2">{{ values["print_name"] }}:</h4>
-
-							<div class="card wish-card border rounded shadow-sm bg-body mb-3">
-								<img class="card-img wish-image" src="./static/img/{{ values['type'] }}_molitva.png" alt="wish">
-								<div class="card-img-overlay wish-card">
-									<table class="table m-0">
-										<tbody>
-											<tr>
-												<td>Молитв за все время</td>
-												<td>{{ values["count"] }}</td>
-											</tr>
-											<tr>
-												<td>Легендарных</td>
-												<td>{{ values["legendary"] }}</td>
-											</tr>
-											<tr>
-												<td>Гарант</td>
-												<td>{{ values["avg"] }}</td>
-											</tr>
-											<tr>
-												<td>До гаранта</td>
-												<td>{{ values["before"] }}</td>
-											</tr>
-											<tr>
-												<td>После гаранта</td>
-												<td>{{ values["after"] }}</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-
-							<table class="table">
-								<thead>
-									<tr>
-										<th scope="col w-50">Имя</th>
-										<th scope="col w-25">Гарант</th>
-										<th scope="col w-25">Дата</th>
-									</tr>
-								</thead>
-								<tbody>
-									{% for pull in values["pulls"] -%}
-									<tr{{ " class='table-info'" if pull["is_weapon"] else "" }}>
-										<td class="w-50">{{ pull["print_name"] }}</td>
-										<td class="w-25">{{ pull["pity"] }}</td>
-										<td class="w-25">{{ pull["time"] }}</td>
-									</tr>
-									{% endfor -%}
-								</tbody>
-							</table>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-			</div>
-
-			<div id="builds" class="container mt-5 border-top">
-				<div class="row justify-content-center gy-4 gx-lg-4 mt-5">
-					<div class="col-12 mb-3">
-						<h2 class="fs-3 fs-sm-4 text-center text-uppercase">Сборки</h2>
-						<div class="row">
-							<div class="col-2">
-								<div class="list-group list-element nav-characters">
-									{% for name, value in data.items()  %}
-									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
-										<img class="col-6 card-img element-image" src="{{ value['src'] }}" alt="{{ name }}"/>
-										<a href="#{{ name }}">
-											<div class="card-img-overlay d-flex align-items-center justify-content-end">
-												<span class="text-decoration-none text-uppercase text-black">
-													{{ value["ru"] }}
-												</span>
-											</div>
-										</a>
-									</div>
-									{% endfor %}
-								</div>
-							</div>
-							<div class="col-10 element-characters">
-								{% for element, element_values in data.items() %}
-								<h4 class="col-sm-12 ps-4" id="{{ element }}">{{ element_values["ru"] }}</h4>
-								<div class="row row-cols-4 justify-content-evenly">
-										{% for character in element_values["characters"] %}
-											{% for name, character_value in character.items(): %}
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top{{ ' grayscale' if character_value['grayscale'] else '' }}"
-												src="{{ character_value['href'] }}" alt="{{ name }}" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">{{ character_value["ru"] }}</h5>
-											 {# <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="bennet.png">Подробнее</button> --> #}
-										</div>
-									</div>
-											{% endfor %}
-										{% endfor %}
-								</div>
-								{% endfor %}
-							</div>
+		<main class="container" role="main">
+			<div class="h-100 main">
+				<div class="d-flex justify-content-center align-items-center">
+					<img class="main__img" src="./static/img/pegasus.webp">
+					<div class="main__desc">
+						<h1>Vladislav Shevchenko</h1>
+						<h2>Same desc, same desc, same desc, same desc, same desc, same desc</h2>
+						<div class="links d-flex">
+							<div>GitHub</div>
+							<div>GitHub</div>
+							<div>GitHub</div>
+							<div>GitHub</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="modal fade" id="exampleModal" tabindex="-1">
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="card bg-dark">
-							<img class="card-img-top modal-image-character" loading="lazy" />
-						</div>
-					</div>
-				</div>
+			<div class="bg-gray" style="height: 1000px">
+
+			</div>
+
+			<div style="height: 1000px">
+
 			</div>
 		</main>
 
-		<footer class="bg-dark py-3 my-4">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark">
 			<div class="container">
-				<ul class="nav justify-content-center border-bottom pb-3 mb-3">
-					<li class="nav-item"><a href="#social" class="nav-link px-2 text-muted">Социальные сети</a></li>
-					<li class="nav-item"><a href="#wish" class="nav-link px-2 text-muted">Молитвы</a></li>
-					<li class="nav-item"><a href="#builds" class="nav-link px-2 text-muted">Сборки</a></li>
-				</ul>
-				<p class="text-center text-muted">© 2024 viad8991</p>
+				<p>footer</p>
 			</div>
 		</footer>
-
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/script.js"></script>
-	</body>
+    </body>
 </html>

@@ -5,9 +5,10 @@ from jinja2 import Environment, FileSystemLoader
 
 TEMPLATE_PATH = "templates"
 BUILD_PATH = "build"
-DATA_PATH = "data"
+DATA_PATH = "data/gi"
 
 INDEX_NAME = "index.html"
+GI_TEMPLATE = "gi.html"
 ELEMENTS_NAME = "elements.json"
 SOCIAL_NAME = "social.json"
 CHARACTERS = "characters.json"
@@ -40,7 +41,7 @@ def build(win_stat: dict):
         "social": social,
         "data": result
     }
-    content = jinja.get_template(INDEX_NAME).render(**render_data)
+    content = jinja.get_template(GI_TEMPLATE).render(**render_data)
 
     with open(os.path.join(BUILD_PATH, INDEX_NAME), "w", encoding="utf-8") as f:
         f.write(content)
