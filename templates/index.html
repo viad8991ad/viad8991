@@ -28,6 +28,58 @@
 			.bg-gray {
 				background-color: #dee2e6;
 			}
+
+			.dot {
+				width: 20px;
+				height: 20px;
+				border-radius: 20px;
+				background-color: #cfcfcf;
+				border: 2px solid white;
+			}
+
+			<!--
+				<ul class="timeline">
+					<li>Событие 1</li>
+					<li>Событие 2</li>
+					<li>Событие 3</li>
+				</ul>
+
+			.timeline {
+				position: relative;
+				list-style: none;
+				padding: 0;
+			}
+
+			.timeline li {
+				position: relative;
+				padding-left: 20px; /* Отступ для точки */
+				margin-bottom: 40px; /* Промежуток между временными промежутками */
+			}
+
+			.timeline li::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -10px; /* Положение точки */
+				width: 20px; /* Ширина линии */
+				border-left: 2px solid #000; /* Стиль линии */
+			}
+
+			.timeline li::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -5px; /* Положение точки */
+				width: 10px; /* Диаметр точки */
+				height: 10px; /* Диаметр точки */
+				background-color: #000; /* Цвет точки */
+				border-radius: 50%; /* Сделать точку круглой */
+			}
+
+			.timeline li:last-child {
+				margin-bottom: 0; /* Убираем промежуток для последнего элемента */
+			}
+			-->
 		</style>
 	</head>
     <body>
@@ -41,29 +93,66 @@
 			</nav>
 		</header>
 
-		<main class="container" role="main">
-			<div class="h-100 main">
-				<div class="d-flex justify-content-center align-items-center">
-					<img class="main__img" src="./static/img/pegasus.webp">
-					<div class="main__desc">
-						<h1>Vladislav Shevchenko</h1>
-						<h2>Same desc, same desc, same desc, same desc, same desc, same desc</h2>
-						<div class="links d-flex">
-							<div>GitHub</div>
-							<div>GitHub</div>
-							<div>GitHub</div>
-							<div>GitHub</div>
+		<main role="main">
+			<div class="min-vh-100 main container d-flex justify-content-center align-items-center">
+				<img class="main__img" src="./static/img/pegasus.webp">
+				<div class="main__desc">
+					<h1>Vladislav Shevchenko</h1>
+					<h2>Same desc, same desc, same desc, same desc, same desc, same desc</h2>
+					<div class="links d-flex">
+						<div class="px-2">GitHub</div>
+						<div class="px-2">GitHub</div>
+						<div class="px-2">GitHub</div>
+						<div class="px-2">GitHub</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="min-vh-100 bg-gray">
+				<div class="container">
+					<div class="row">
+						<div class="col d-flex flex-row-reverse px-2" style="height: 80px">
+							<div>2024</div>
+							<div class="slip dot"></div>
+							<div>foo</div>
+						</div>
+						<div class="col d-flex justify-content-start" style="height: 80px">
+							<div>2024</div>
+							<div class="slip dot"></div>
+							<div>foo</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col d-flex flex-row-reverse" style="height: 80px">
+							<div>2024</div>
+							<div class="slip dot"></div>
+							<div>foo</div>
+						</div>
+						<div class="col d-flex justify-content-start" style="height: 80px">
+							<div>2024</div>
+							<div class="slip dot"></div>
+							<div>foo</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col d-flex flex-row-reverse" style="height: 80px">
+							<div>2024</div>
+							<div class="slip dot"></div>
+							<div>foo</div>
+						</div>
+						<div class="col d-flex justify-content-start" style="height: 80px">
+							<div>2024</div>
+							<div class="slip dot"></div>
+							<div>foo</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="bg-gray" style="height: 1000px">
+			<div class="min-vh-100">
+				<div class="container">
 
-			</div>
-
-			<div style="height: 1000px">
-
+				</div>
 			</div>
 		</main>
 
