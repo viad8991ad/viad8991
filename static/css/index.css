@@ -1,0 +1,74 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.main {
+    padding: 60px 15px 0;
+}
+
+.main__img {
+    width: 320px;
+	height: 240px;
+	border-radius: 120px;
+}
+
+.main__desc {
+    width: 420px;
+	height: 240px;
+	border-radius: 120px;
+}
+
+.bg-gray {
+    background-color: #dee2e6;
+}
+
+/* timeline block */
+
+.dot {
+    position: absolute !important;
+	top: 7px;
+	left: -12px;
+
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: #6c757d;
+	border: 4px solid #E9ECEF;
+}
+
+.line {
+    border-left: 4px solid #6c757d;
+    position: relative;
+}
+
+.show-more-label:after {
+    content: "Show More";
+	display: block;
+}
+
+#timeline_collapse:checked + .show-more-label:after {
+    content: "Show Less";
+}
+
+.timeline {
+    position: relative;
+	max-height: 70vh;
+	overflow: hidden;
+
+	/* убил планые переходы, оно не работает из-за #timeline_collapse:not(:checked) + .timeline::after */
+    transition: max-height 0.3s ease;
+}
+
+#timeline_collapse:checked ~ .timeline {
+    max-height: 100%;
+}
+
+#timeline_collapse:not(:checked) + .timeline::after {
+    content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(rgba(255, 255, 255, 0), #E9ECEF);
+}
