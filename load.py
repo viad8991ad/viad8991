@@ -4,7 +4,7 @@ import os
 from jinja2 import Environment, FileSystemLoader
 
 TEMPLATE_PATH = "templates"
-BUILD_PATH = "build"
+BUILD_PATH = "build/gi"
 DATA_PATH = "data/gi"
 
 INDEX_NAME = "index.html"
@@ -43,5 +43,5 @@ def build(win_stat: dict):
     }
     content = jinja.get_template(GI_TEMPLATE).render(**render_data)
 
-    with open(os.path.join(BUILD_PATH, GI_TEMPLATE), "w", encoding="utf-8") as f:
+    with open(os.path.join(BUILD_PATH, INDEX_NAME), "w", encoding="utf-8") as f:
         f.write(content)
