@@ -12,6 +12,7 @@ GI_TEMPLATE = "gi.html"
 ELEMENTS_NAME = "elements.json"
 SOCIAL_NAME = "social.json"
 CHARACTERS = "characters.json"
+CHARACTERS_PATH_DIR = "../static/img/characters/"
 
 
 def build(win_stat: dict):
@@ -34,6 +35,7 @@ def build(win_stat: dict):
     characters = dict(sorted(characters.items(), key=lambda x: x[1]["ru"]))
 
     for key, values in characters.items():
+        values["href"] = CHARACTERS_PATH_DIR + values["href"]
         result[values["element"]]["characters"].append({key: values})
 
     render_data = {
