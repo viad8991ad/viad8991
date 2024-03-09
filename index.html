@@ -3,1700 +3,332 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Pegasus</title>
+
 		<link rel="icon" href="./static/img/icon.webp" />
-		<link rel="stylesheet" href="./static/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="./static/css/gi-style.css" />
+		<title>Pegasus</title>
+
+		<link
+				href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+				rel="stylesheet"
+				integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+				crossorigin="anonymous"
+		>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+		<link rel="stylesheet" href="./static/css/index.css" />
+
+		<style>
+
+		</style>
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex flex-row justify-content-between px-3">
-			<a class="navbar-brand mb-0 h1" href="#">Pegasus</a>
-			<div class="navbar-nav">
-				<a class="nav-link" href="#social">Социальные сети</a>
-				<a class="nav-link" href="#wish">Молитвы</a>
-				<a class="nav-link" href="#builds">Сборки</a>
-			</div>
-		</nav>
-
-		<div class="padding-top h-100 main-image" style="background-image: url('./static/img/gi_index.webp')">
-			<div class="container">
-				<div class="row flex-row-reverse">
-					<div class="col-md-5 align-self-center">
-						<h1 class="text-uppercase">кокомимейн снг</h1>
-					</div>
+    <body>
+		<header class="container fixed-top">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex flex-row justify-content-between px-3">
+				<a class="navbar-brand mb-0 h1" href="#">Pegasus</a>
+				<div class="navbar-nav">
+					<a class="nav-link" href="/gi.html">GI</a>
+					<a class="nav-link" href="/hsr.html">HSR</a>
 				</div>
-			</div>
-		</div>
+			</nav>
+		</header>
 
-		<main>
-			<div id="social" class="container border-top">
-				<div class="row justify-content-center gy-4 gx-lg-4 mt-5">
-					<div class="col-12 mb-3 text-center">
-						<h2 class="fs-3 fs-sm-4 text-uppercase">Социальные сети</h2>
-					</div>
-					
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://www.youtube.com/"
-						>
-							<img class="col-6 social-image pe-2" src="./static/img/social/youtube.svg" alt="YouTube"/>
-							<h4 class="m-0">YouTube</h4>
+		<main role="main">
+			<div class="min-vh-100 main container d-flex justify-content-center align-items-center">
+				<img class="main__img" src="./static/img/pegasus.webp">
+				<div class="d-flex flex-column" style="height: 240px;">
+					<p class="fs-1">Vladislav Shevchenko</p>
+					<p class="fs-4 text-body text-opacity-50">Java-backend разработчик</p>
+					<p class="fs-4 text-body text-opacity-50">Любитель поковырять python =)</p>
+					<div class="links d-flex">
+						<a href="https://github.com/viad8991ad">
+							<img src="./static/img/github.svg" style="width: 40px; height: 40px">
 						</a>
-					</div>
-					
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://www.twitch.tv/"
-						>
-							<img class="col-6 social-image pe-2" src="./static/img/social/twitch.svg" alt="Twitch"/>
-							<h4 class="m-0">Twitch</h4>
-						</a>
-					</div>
-					
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://vk.com/"
-						>
-							<img class="col-6 social-image pe-2" src="./static/img/social/vk.svg" alt="VK"/>
-							<h4 class="m-0">VK</h4>
-						</a>
-					</div>
-					
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://open.spotify.com/"
-						>
-							<img class="col-6 social-image pe-2" src="./static/img/social/spotify.svg" alt="Spotify"/>
-							<h4 class="m-0">Spotify</h4>
-						</a>
-					</div>
-					
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://discord.com/"
-						>
-							<img class="col-6 social-image pe-2" src="./static/img/social/discord.svg" alt="Discord"/>
-							<h4 class="m-0">Discord</h4>
-						</a>
-					</div>
-					
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://instagram.com/"
-						>
-							<img class="col-6 social-image pe-2" src="./static/img/social/instagram.svg" alt="Instagram"/>
-							<h4 class="m-0">Instagram</h4>
-						</a>
-					</div>
-					
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://www.hoyolab.com/"
-						>
-							<img class="col-6 social-image pe-2" src="./static/img/social/hoyolab.png" alt="HoYoLAB"/>
-							<h4 class="m-0">HoYoLAB</h4>
-						</a>
-					</div>
-					
-					<div class="col-lg-5">
-						<a
-							class="d-flex align-items-center text-decoration-none text-black"
-							href="https://twitter.com/"
-						>
-							<img class="col-6 social-image pe-2" src="./static/img/social/twitter.svg" alt="X"/>
-							<h4 class="m-0">X</h4>
-						</a>
-					</div>
-					
-				</div>
-			</div>
-
-			<div id="wish" class="container mt-5 border-top">
-				<div class="row justify-content-center gy-4 gx-lg-4 mt-5">
-					<div class="col-12 mb-3 text-center">
-						<h2 class="fs-3 fs-sm-4 text-uppercase">Молитвы</h2>
-					</div>
-					<div class="row justify-content-around">
-						<div class="col-md-6">
-
-							<h4 class="col-sm-12 mt-4 mb-2">События Персонажа:</h4>
-
-							<div class="card wish-card border rounded shadow-sm bg-body mb-3">
-								<img class="card-img wish-image" src="./static/img/event_molitva.png" alt="wish">
-								<div class="card-img-overlay wish-card">
-									<table class="table m-0">
-										<tbody>
-											<tr>
-												<td>Молитв за все время</td>
-												<td>1852</td>
-											</tr>
-											<tr>
-												<td>Легендарных</td>
-												<td>30</td>
-											</tr>
-											<tr>
-												<td>Гарант</td>
-												<td>61.57</td>
-											</tr>
-											<tr>
-												<td>До гаранта</td>
-												<td>11</td>
-											</tr>
-											<tr>
-												<td>После гаранта</td>
-												<td>19</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-
-							<table class="table">
-								<thead>
-									<tr>
-										<th scope="col w-50">Имя</th>
-										<th scope="col w-25">Гарант</th>
-										<th scope="col w-25">Дата</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="w-50">Джинн C3</td>
-										<td class="w-25">45</td>
-										<td class="w-25">02.12.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Фурина C1</td>
-										<td class="w-25">76</td>
-										<td class="w-25">17.11.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Джинн C2</td>
-										<td class="w-25">75</td>
-										<td class="w-25">08.11.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Фурина</td>
-										<td class="w-25">37</td>
-										<td class="w-25">08.11.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Кокоми C3</td>
-										<td class="w-25">15</td>
-										<td class="w-25">25.07.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Кокоми C2</td>
-										<td class="w-25">77</td>
-										<td class="w-25">25.07.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Тигнари C1</td>
-										<td class="w-25">85</td>
-										<td class="w-25">13.06.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Е Лань</td>
-										<td class="w-25">74</td>
-										<td class="w-25">07.02.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Райдэн</td>
-										<td class="w-25">81</td>
-										<td class="w-25">30.12.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Странник</td>
-										<td class="w-25">76</td>
-										<td class="w-25">10.12.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Нахида C1</td>
-										<td class="w-25">1</td>
-										<td class="w-25">02.11.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Нахида</td>
-										<td class="w-25">41</td>
-										<td class="w-25">02.11.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Нилу</td>
-										<td class="w-25">48</td>
-										<td class="w-25">15.10.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Кокоми C1</td>
-										<td class="w-25">78</td>
-										<td class="w-25">11.09.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Ци Ци C1</td>
-										<td class="w-25">81</td>
-										<td class="w-25">06.08.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Кадзуха C3</td>
-										<td class="w-25">54</td>
-										<td class="w-25">14.07.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Кэ Цин C1</td>
-										<td class="w-25">85</td>
-										<td class="w-25">14.07.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Кадзуха C2</td>
-										<td class="w-25">78</td>
-										<td class="w-25">14.07.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Кадзуха C1</td>
-										<td class="w-25">9</td>
-										<td class="w-25">14.07.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Кадзуха</td>
-										<td class="w-25">36</td>
-										<td class="w-25">14.07.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Джинн C1</td>
-										<td class="w-25">77</td>
-										<td class="w-25">14.07.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Аяка</td>
-										<td class="w-25">78</td>
-										<td class="w-25">19.04.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Ци Ци</td>
-										<td class="w-25">60</td>
-										<td class="w-25">13.04.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Венти</td>
-										<td class="w-25">77</td>
-										<td class="w-25">30.03.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Чжун Ли</td>
-										<td class="w-25">77</td>
-										<td class="w-25">25.01.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Гань Юй</td>
-										<td class="w-25">75</td>
-										<td class="w-25">25.01.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Эола</td>
-										<td class="w-25">79</td>
-										<td class="w-25">07.12.2021</td>
-									</tr>
-									<tr>
-										<td class="w-50">Дилюк</td>
-										<td class="w-25">74</td>
-										<td class="w-25">24.11.2021</td>
-									</tr>
-									<tr>
-										<td class="w-50">Ху Тао</td>
-										<td class="w-25">79</td>
-										<td class="w-25">02.11.2021</td>
-									</tr>
-									<tr>
-										<td class="w-50">Кокоми</td>
-										<td class="w-25">19</td>
-										<td class="w-25">08.10.2021</td>
-									</tr>
-									</tbody>
-							</table>
-						</div>
-						<div class="col-md-6">
-
-							<h4 class="col-sm-12 mt-4 mb-2">События Оружия:</h4>
-
-							<div class="card wish-card border rounded shadow-sm bg-body mb-3">
-								<img class="card-img wish-image" src="./static/img/event_molitva.png" alt="wish">
-								<div class="card-img-overlay wish-card">
-									<table class="table m-0">
-										<tbody>
-											<tr>
-												<td>Молитв за все время</td>
-												<td>1128</td>
-											</tr>
-											<tr>
-												<td>Легендарных</td>
-												<td>19</td>
-											</tr>
-											<tr>
-												<td>Гарант</td>
-												<td>59.37</td>
-											</tr>
-											<tr>
-												<td>До гаранта</td>
-												<td>5</td>
-											</tr>
-											<tr>
-												<td>После гаранта</td>
-												<td>14</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-
-							<table class="table">
-								<thead>
-									<tr>
-										<th scope="col w-50">Имя</th>
-										<th scope="col w-25">Гарант</th>
-										<th scope="col w-25">Дата</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="w-50">Сияющая жатва</td>
-										<td class="w-25">24</td>
-										<td class="w-25">09.01.2024</td>
-									</tr>
-									<tr>
-										<td class="w-50">Громовой пульс</td>
-										<td class="w-25">66</td>
-										<td class="w-25">09.01.2024</td>
-									</tr>
-									<tr>
-										<td class="w-50">Блеск тихих вод</td>
-										<td class="w-25">66</td>
-										<td class="w-25">08.11.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Небесное величие</td>
-										<td class="w-25">72</td>
-										<td class="w-25">08.11.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Великолепие лазурного свода</td>
-										<td class="w-25">69</td>
-										<td class="w-25">08.11.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Воспоминания Тулайтуллы C1</td>
-										<td class="w-25">21</td>
-										<td class="w-25">26.07.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Сновидения тысячи ночей C1</td>
-										<td class="w-25">70</td>
-										<td class="w-25">01.05.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Небесное крыло C1</td>
-										<td class="w-25">64</td>
-										<td class="w-25">15.04.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Рассекающий туман</td>
-										<td class="w-25">75</td>
-										<td class="w-25">22.03.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Усмиритель бед</td>
-										<td class="w-25">37</td>
-										<td class="w-25">21.03.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Нефритовый коршун</td>
-										<td class="w-25">50</td>
-										<td class="w-25">21.03.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Аква симулякрум</td>
-										<td class="w-25">67</td>
-										<td class="w-25">07.02.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Небесное крыло</td>
-										<td class="w-25">69</td>
-										<td class="w-25">07.02.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Воспоминания Тулайтуллы</td>
-										<td class="w-25">66</td>
-										<td class="w-25">15.12.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Небесный меч C3</td>
-										<td class="w-25">43</td>
-										<td class="w-25">18.11.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Сновидения тысячи ночей</td>
-										<td class="w-25">66</td>
-										<td class="w-25">04.11.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Вечное лунное сияние C1</td>
-										<td class="w-25">68</td>
-										<td class="w-25">09.09.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Вечное лунное сияние</td>
-										<td class="w-25">68</td>
-										<td class="w-25">08.03.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Посох Хомы</td>
-										<td class="w-25">67</td>
-										<td class="w-25">02.11.2021</td>
-									</tr>
-									</tbody>
-							</table>
-						</div>
-						<div class="col-md-6">
-
-							<h4 class="col-sm-12 mt-4 mb-2">Стандарт:</h4>
-
-							<div class="card wish-card border rounded shadow-sm bg-body mb-3">
-								<img class="card-img wish-image" src="./static/img/standard_molitva.png" alt="wish">
-								<div class="card-img-overlay wish-card">
-									<table class="table m-0">
-										<tbody>
-											<tr>
-												<td>Молитв за все время</td>
-												<td>593</td>
-											</tr>
-											<tr>
-												<td>Легендарных</td>
-												<td>9</td>
-											</tr>
-											<tr>
-												<td>Гарант</td>
-												<td>58.22</td>
-											</tr>
-											<tr>
-												<td>До гаранта</td>
-												<td>3</td>
-											</tr>
-											<tr>
-												<td>После гаранта</td>
-												<td>6</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-
-							<table class="table">
-								<thead>
-									<tr>
-										<th scope="col w-50">Имя</th>
-										<th scope="col w-25">Гарант</th>
-										<th scope="col w-25">Дата</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="w-50">Кэ Цин C2</td>
-										<td class="w-25">77</td>
-										<td class="w-25">01.10.2023</td>
-									</tr>
-									<tr class='table-info'>
-										<td class="w-50">Небесное крыло C2</td>
-										<td class="w-25">10</td>
-										<td class="w-25">22.04.2023</td>
-									</tr>
-									<tr>
-										<td class="w-50">Тигнари</td>
-										<td class="w-25">75</td>
-										<td class="w-25">16.04.2023</td>
-									</tr>
-									<tr class='table-info'>
-										<td class="w-50">Небесный меч C2</td>
-										<td class="w-25">79</td>
-										<td class="w-25">04.11.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Кэ Цин</td>
-										<td class="w-25">70</td>
-										<td class="w-25">01.07.2022</td>
-									</tr>
-									<tr class='table-info'>
-										<td class="w-50">Небесный меч C1</td>
-										<td class="w-25">38</td>
-										<td class="w-25">26.01.2022</td>
-									</tr>
-									<tr>
-										<td class="w-50">Джинн</td>
-										<td class="w-25">76</td>
-										<td class="w-25">01.12.2021</td>
-									</tr>
-									<tr class='table-info'>
-										<td class="w-50">Небесный атлас</td>
-										<td class="w-25">20</td>
-										<td class="w-25">05.10.2021</td>
-									</tr>
-									<tr class='table-info'>
-										<td class="w-50">Небесный меч</td>
-										<td class="w-25">79</td>
-										<td class="w-25">05.10.2021</td>
-									</tr>
-									</tbody>
-							</table>
-						</div>
-						<div class="col-md-6">
-
-							<h4 class="col-sm-12 mt-4 mb-2">Баннер Новичка:</h4>
-
-							<div class="card wish-card border rounded shadow-sm bg-body mb-3">
-								<img class="card-img wish-image" src="./static/img/standard_molitva.png" alt="wish">
-								<div class="card-img-overlay wish-card">
-									<table class="table m-0">
-										<tbody>
-											<tr>
-												<td>Молитв за все время</td>
-												<td>20</td>
-											</tr>
-											<tr>
-												<td>Легендарных</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>Гарант</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>До гаранта</td>
-												<td>0</td>
-											</tr>
-											<tr>
-												<td>После гаранта</td>
-												<td>0</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-
-							<table class="table">
-								<thead>
-									<tr>
-										<th scope="col w-50">Имя</th>
-										<th scope="col w-25">Гарант</th>
-										<th scope="col w-25">Дата</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="w-50">(´•︵•`)</td>
-										<td class="w-25"></td>
-										<td class="w-25">06.03.2024</td>
-									</tr>
-									</tbody>
-							</table>
-						</div>
-						
 					</div>
 				</div>
 			</div>
 
-			<div id="builds" class="container mt-5 border-top">
-				<div class="row justify-content-center gy-4 gx-lg-4 mt-5">
-					<div class="col-12 mb-3">
-						<h2 class="fs-3 fs-sm-4 text-center text-uppercase">Сборки</h2>
-						<div class="row">
-							<div class="col-2">
-								<div class="list-group list-element nav-characters">
-									
-									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
-										<img class="col-6 card-img element-image" src="./static/img/element/Anemo.svg" alt="anemo"/>
-										<a href="#anemo">
-											<div class="card-img-overlay d-flex align-items-center justify-content-end">
-												<span class="text-decoration-none text-uppercase text-black">
-													Анемо
-												</span>
-											</div>
-										</a>
-									</div>
-									
-									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
-										<img class="col-6 card-img element-image" src="./static/img/element/Geo.svg" alt="geo"/>
-										<a href="#geo">
-											<div class="card-img-overlay d-flex align-items-center justify-content-end">
-												<span class="text-decoration-none text-uppercase text-black">
-													Гео
-												</span>
-											</div>
-										</a>
-									</div>
-									
-									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
-										<img class="col-6 card-img element-image" src="./static/img/element/Electro.svg" alt="electro"/>
-										<a href="#electro">
-											<div class="card-img-overlay d-flex align-items-center justify-content-end">
-												<span class="text-decoration-none text-uppercase text-black">
-													Электро
-												</span>
-											</div>
-										</a>
-									</div>
-									
-									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
-										<img class="col-6 card-img element-image" src="./static/img/element/Dendro.svg" alt="dendro"/>
-										<a href="#dendro">
-											<div class="card-img-overlay d-flex align-items-center justify-content-end">
-												<span class="text-decoration-none text-uppercase text-black">
-													Дэндро
-												</span>
-											</div>
-										</a>
-									</div>
-									
-									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
-										<img class="col-6 card-img element-image" src="./static/img/element/Hydro.svg" alt="hydro"/>
-										<a href="#hydro">
-											<div class="card-img-overlay d-flex align-items-center justify-content-end">
-												<span class="text-decoration-none text-uppercase text-black">
-													Гидро
-												</span>
-											</div>
-										</a>
-									</div>
-									
-									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
-										<img class="col-6 card-img element-image" src="./static/img/element/Pyro.svg" alt="pyro"/>
-										<a href="#pyro">
-											<div class="card-img-overlay d-flex align-items-center justify-content-end">
-												<span class="text-decoration-none text-uppercase text-black">
-													Пиро
-												</span>
-											</div>
-										</a>
-									</div>
-									
-									<div class="list-group-item list-group-item-action element-card shadow-sm bg-body rounded mb-3 border">
-										<img class="col-6 card-img element-image" src="./static/img/element/Cryo.svg" alt="cryo"/>
-										<a href="#cryo">
-											<div class="card-img-overlay d-flex align-items-center justify-content-end">
-												<span class="text-decoration-none text-uppercase text-black">
-													Крио
-												</span>
-											</div>
-										</a>
-									</div>
-									
-								</div>
-							</div>
-							<div class="col-10 element-characters">
-								
-								<h4 class="col-sm-12 ps-4" id="anemo">Анемо</h4>
-								<div class="row row-cols-4 justify-content-evenly">
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Venti_Resize_Wish_500_500.webp" alt="Venti" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Венти</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Jean_Resize_Wish_500_500.webp" alt="Jean" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Джинн</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Kaedehara_Kazuha_Resize_Wish_500_500.webp" alt="Kaedehara Kazuha" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Кадзуха</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Lynette_Resize_Wish_500_500.webp" alt="Lynette" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Линетт</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Sucrose_Resize_Wish_500_500.webp" alt="Sucrose" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Сахароза</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Sayu_Resize_Wish_500_500.webp" alt="Sayu" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Саю</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Wanderer_Resize_Wish_500_500.webp" alt="Wanderer" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Странник</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Xianyun_Resize_Wish_500_500.webp" alt="Xianyun" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Сянь Юнь</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Xiao_Resize_Wish_500_500.webp" alt="Xiao" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Сяо</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Faruzan_Resize_Wish_500_500.webp" alt="Faruzan" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Фарузан</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Shikanoin_Heizou_Resize_Wish_500_500.webp" alt="Shikanoin Heizou" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Хэйдзо</h5>
-											 
-										</div>
-									</div>
-											
-										
-								</div>
-								
-								<h4 class="col-sm-12 ps-4" id="geo">Гео</h4>
-								<div class="row row-cols-4 justify-content-evenly">
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Albedo_Resize_Wish_500_500.webp" alt="Albedo" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Альбедо</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Gorou_Resize_Wish_500_500.webp" alt="Gorou" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Горо</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Arataki_Itto_Resize_Wish_500_500.webp" alt="Arataki Itto" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Итто</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Navia_Resize_Wish_500_500.webp" alt="Navia" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Навия</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Ningguang_Resize_Wish_500_500.webp" alt="Ningguang" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Нин Гуан</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Noelle_Resize_Wish_500_500.webp" alt="Noelle" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Ноэлль</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Zhongli_Resize_Wish_500_500.webp" alt="Zhongli" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Чжун Ли</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Yun_Jin_Resize_Wish_500_500.webp" alt="Yun Jin" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Юнь Цзинь</h5>
-											 
-										</div>
-									</div>
-											
-										
-								</div>
-								
-								<h4 class="col-sm-12 ps-4" id="electro">Электро</h4>
-								<div class="row row-cols-4 justify-content-evenly">
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Beidou_Resize_Wish_500_500.webp" alt="Beidou" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Бэй Доу</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Dori_Resize_Wish_500_500.webp" alt="Dori" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Дори</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Keqing_Resize_Wish_500_500.webp" alt="Keqing" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Кэ Цин</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Lisa_Resize_Wish_500_500.webp" alt="Lisa" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Лиза</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Raiden_Shogun_Resize_Wish_500_500.webp" alt="Raiden Shogun" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Райдэн</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Razor_Resize_Wish_500_500.webp" alt="Razor" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Рэйзор</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Cyno_Resize_Wish_500_500.webp" alt="Cyno" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Сайно</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Kujou_Sara_Resize_Wish_500_500.webp" alt="Kujou Sara" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Сара</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Kuki_Shinobu_Resize_Wish_500_500.webp" alt="Kuki Shinobu" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Синобу</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Fischl_Resize_Wish_500_500.webp" alt="Fischl" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Фишль</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Yae_Miko_Resize_Wish_500_500.webp" alt="Yae Miko" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Яэ Мико</h5>
-											 
-										</div>
-									</div>
-											
-										
-								</div>
-								
-								<h4 class="col-sm-12 ps-4" id="dendro">Дэндро</h4>
-								<div class="row row-cols-4 justify-content-evenly">
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Alhaitham_Resize_Wish_500_500.webp" alt="Alhaitham" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Аль-Хайтам</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Baizhu_Resize_Wish_500_500.webp" alt="Baizhu" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Бай Чжу</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Kaveh_Resize_Wish_500_500.webp" alt="Kaveh" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Кавех</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Kirara_Resize_Wish_500_500.webp" alt="Kirara" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Кирара</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Collei_Resize_Wish_500_500.webp" alt="Collei" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Коллеи</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Nahida_Resize_Wish_500_500.webp" alt="Nahida" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Нахида</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Tighnari_Resize_Wish_500_500.webp" alt="Tighnari" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Тигнари</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Yaoyao_Resize_Wish_500_500.webp" alt="Yaoyao" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Яо Яо</h5>
-											 
-										</div>
-									</div>
-											
-										
-								</div>
-								
-								<h4 class="col-sm-12 ps-4" id="hydro">Гидро</h4>
-								<div class="row row-cols-4 justify-content-evenly">
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Kamisato_Ayato_Resize_Wish_500_500.webp" alt="Kamisato Ayato" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Аято</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Barbara_Resize_Wish_500_500.webp" alt="Barbara" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Барбара</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Yelan_Resize_Wish_500_500.webp" alt="Yelan" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Е Лань</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Candace_Resize_Wish_500_500.webp" alt="Candace" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Кандакия</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Sangonomiya_Kokomi_Resize_Wish_500_500.webp" alt="Sangonomiya Kokomi" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Кокоми</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Mona_Resize_Wish_500_500.webp" alt="Mona" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Мона</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Nilou_Resize_Wish_500_500.webp" alt="Nilou" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Нилу</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Neuvillette_Resize_Wish_500_500.webp" alt="Neuvillette" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Нёвиллет</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Xingqiu_Resize_Wish_500_500.webp" alt="Xingqiu" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Син Цю</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Tartaglia_Resize_Wish_500_500.webp" alt="Tartaglia" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Тарталья</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Furina_Resize_Wish_500_500.webp" alt="Furina" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Фурина</h5>
-											 
-										</div>
-									</div>
-											
-										
-								</div>
-								
-								<h4 class="col-sm-12 ps-4" id="pyro">Пиро</h4>
-								<div class="row row-cols-4 justify-content-evenly">
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Bennett_Resize_Wish_500_500.webp" alt="Bennett" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Беннет</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Diluc_Resize_Wish_500_500.webp" alt="Diluc" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Дилюк</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Dehya_Resize_Wish_500_500.webp" alt="Dehya" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Дэхья</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Yoimiya_Resize_Wish_500_500.webp" alt="Yoimiya" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Еимия</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Gaming_Resize_Wish_500_500.webp" alt="Gaming" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Ка Мин</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Klee_Resize_Wish_500_500.webp" alt="Klee" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Кли</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Lyney_Resize_Wish_500_500.webp" alt="Lyney" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Лини</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Xinyan_Resize_Wish_500_500.webp" alt="Xinyan" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Синь Янь</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Xiangling_Resize_Wish_500_500.webp" alt="Xiangling" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Сян Лин</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Thoma_Resize_Wish_500_500.webp" alt="Thoma" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Тома</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Hu_Tao_Resize_Wish_500_500.webp" alt="Hu Tao" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Ху Тао</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Chevreuse_Resize_Wish_500_500.webp" alt="Chevreuse" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Шеврёз</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Amber_Resize_Wish_500_500.webp" alt="Amber" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Эмбер</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Yanfei_Resize_Wish_500_500.webp" alt="Yanfei" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Янь Фэй</h5>
-											 
-										</div>
-									</div>
-											
-										
-								</div>
-								
-								<h4 class="col-sm-12 ps-4" id="cryo">Крио</h4>
-								<div class="row row-cols-4 justify-content-evenly">
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Kamisato_Ayaka_Resize_Wish_500_500.webp" alt="Kamisato Ayaka" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Аяка</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Ganyu_Resize_Wish_500_500.webp" alt="Ganyu" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Гань Юй</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Diona_Resize_Wish_500_500.webp" alt="Diona" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Диона</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Kaeya_Resize_Wish_500_500.webp" alt="Kaeya" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Кэйа</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Layla_Resize_Wish_500_500.webp" alt="Layla" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Лайла</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Mika_Resize_Wish_500_500.webp" alt="Mika" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Мика</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Wriothesley_Resize_Wish_500_500.webp" alt="Wriothesley" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Ризли</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Rosaria_Resize_Wish_500_500.webp" alt="Rosaria" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Розария</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Freminet_Resize_Wish_500_500.webp" alt="Freminet" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Фремине</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Qiqi_Resize_Wish_500_500.webp" alt="Qiqi" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Ци Ци</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Chongyun_Resize_Wish_500_500.webp" alt="Chongyun" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Чун Юнь</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Charlotte_Resize_Wish_500_500.webp" alt="Charlotte" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Шарлотта</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Shenhe_Resize_Wish_500_500.webp" alt="Shenhe" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Шэнь Хэ</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Aloy_Resize_Wish_500_500.webp" alt="Aloy" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Элой</h5>
-											 
-										</div>
-									</div>
-											
-										
-											
-									<div class="card character-card col-sm-3 mb-3 mx-4">
-										<img
-												class="card-img-top"
-												src="./static/img/characters/Character_Eula_Resize_Wish_500_500.webp" alt="Eula" loading="lazy"/>
-										<div class="card-body">
-											<h5 class="card-title">Эола</h5>
-											 
-										</div>
-									</div>
-											
-										
-								</div>
-								
+			<div class="p-5 bg-body-secondary">
+				<input id="timeline_collapse" type="checkbox" style="display: none;">
+				<div class="container timeline">
+					<p class="pb-3 fs-1 text-uppercase text-center">Таймлайн</p>
+					<div class="row">
+						<div class="col d-flex flex-row-reverse" style="height: 60px"></div>
+						<div class="col d-flex justify-content-start line" style="height: 60px;"></div>
+					</div>
+					<div class="row">
+						<div class="col d-flex flex-row-reverse">
+							<p class="fs-4">2023</p>
+						</div>
+						<div class="col d-flex d-flex flex-column line pb-3">
+							<div class="dot"></div>
+							<p class="fs-4">Логема</p>
+							<div class="text-body text-opacity-50">
+								Желая расширить свои знания в направлении разработки и поддержки web-проектов, решил
+								присоединиться к коллективу Логемы.
+								<br/>
+								Встретили меня амбициозные руководители, которые ценят свой персонал и стремятся к развитию
+								компании, уютный офис, в котором приятно работать, новые друзья.
+								<br/>
+								Изучил язык программирования PHP, получил сертификат разработчика "1С-Битрикс: Управление сайтом".
+								<br/>
+								Благодаря моему опыту работы с Java, мы взяли наш первый проект на этом языке.
 							</div>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col d-flex d-flex flex-column align-items-end pb-3">
+							<p class="fs-4">ВолгГТУ</p>
+							<div>Волгоградский государственный технический университет</div>
+							<div class="text-end text-body text-opacity-50">
+								да...
+							</div>
+						</div>
+						<div class="col d-flex justify-content-start line">
+							<div class="dot"></div>
+							<p class="fs-4">2019</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col d-flex flex-row-reverse">
+							<p class="fs-4">2019</p>
+						</div>
+						<div class="col d-flex flex-column line pb-3">
+							<div class="dot"></div>
+							<p class="fs-4">СИТК</p>
+							<div>Современные Информационные Технологии Консалтинг</div>
+							<div class="text-body text-opacity-50">
+								После успешного трудоустройства в качестве младшего разработчика, за 4 года работы в
+								компании моя деятельность охватывала широкий спектр. Поддержка существующих проектов,
+								написании ETL-проектов, интеграцию различных систем, адаптацию open-sourсe проектов и
+								разработку сложной системы, основанной на микросервисной архитектуре. Одним из основных
+								принципов рабочего процесса было использование современных технологических стеков.
+								<br/>
+								За это время мне довелось не только работать с ЯП Kotlin (Java), но и использовать Python,
+								писать сложные SQL-запросы, кластеризовать проекты (Kubernetes), настраивать CI и т.д.
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col d-flex flex-row-reverse">
+							<p class="fs-4">2018</p>
+						</div>
+						<div class="col d-flex flex-column line pb-3">
+							<div class="dot"></div>
+							<p class="fs-4">СИТК</p>
+							<div>Современные Информационные Технологии Консалтинг</div>
+							<div class="text-body text-opacity-50">
+								Во время обучения на бакалавриате, на 4 курсе, я начал свой профессиональный путь, став
+								стажером у выдающегося программиста Конькова В.А. Этот год был переломным для меня, так
+								как он открыл мне путь в сферу IT. Он вдохновил меня своим мастерством и профессионализмом.
+								Опыт работы с ним стал для меня настоящим катализатором для развития, и я благодарен за
+								возможность учиться и расти под его крылом.
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col d-flex flex-column align-items-end pb-3">
+							<p class="fs-4">КТИ</p>
+							<div>Камышинский Технологичсекий Институт</div>
+							<div class="text-end text-body text-opacity-50">
+								В институте я встретил таких людей, как Панфиловв А.Э. - опытного наставника и моего
+								руководителя дипломной работы, и Привалова О.О. - человека с добрым сердцем и глубокими
+								знаниями, их понимание и готовность помочь всегда вдохновляло на новые достижения.
+								<br/>
+								Окончил обучение с красным дипломом
+							</div>
+						</div>
+						<div class="col d-flex justify-content-start line">
+							<div class="dot"></div>
+							<p class="fs-4">2015</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col d-flex d-flex flex-column align-items-end pb-3">
+							<p class="fs-4">404 Not Found</p>
+							<div class="text-end text-body text-opacity-50">
+								Закончил 11 летнее обучение, получил среднее общее образования.
+								<br/>
+								Завершил свой школьный путь с синим дипломом.
+							</div>
+						</div>
+						<div class="col d-flex justify-content-start line">
+							<div class="dot"></div>
+							<p class="fs-4">2004</p>
+						</div>
+					</div>
+				</div>
+				<div style="float: right;">
+					<label for="timeline_collapse" class="show-more-label text-body text-opacity-50"></label>
 				</div>
 			</div>
 
-			<div class="modal fade" id="exampleModal" tabindex="-1">
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="card bg-dark">
-							<img class="card-img-top modal-image-character" loading="lazy" />
+			<div class="p-5">
+				<div class="container">
+
+					<p class="pb-3 fs-1 text-uppercase text-center">Стек технологий</p>
+
+					<div id="accordion">
+
+						<div class="card text-white bg-secondary mb-3">
+							<div class="card-header d-flex justify-content-between align-items-center" id="java">
+								<p class="fs-4 mb-0">Java</p>
+								<span class="material-symbols-outlined">expand_more</span>
+							</div>
+							<div id="collapse_java" class="collapse">
+								<div class="card-body p-3">
+									<h5 class="card-title">Опыт разработки:</h5>
+									<p class="card-text">
+										Spring Boot, Spring Data, Spring for Apache Kafka, Spring Web Flow
+										<br>
+										Amazon Netty, Amazon S3
+										<br>
+										Vaadin
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card text-white bg-secondary mb-3">
+							<div class="card-header d-flex justify-content-between align-items-center" id="kotlin">
+								<p class="fs-4 mb-0">Kotlin</p>
+								<span class="material-symbols-outlined">expand_more</span>
+							</div>
+							<div id="collapse_kotlin" class="collapse">
+								<div class="card-body p-3">
+									<h5 class="card-title">Опыт разработки:</h5>
+									<p class="card-text">
+										KotlinFlow
+										<br>
+										KTOR
+										<br>
+										VOK (Vaadin On Kotlin)
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card text-white bg-secondary mb-3">
+							<div class="card-header d-flex justify-content-between align-items-center" id="python">
+								<p class="fs-4 mb-0">Python</p>
+								<span class="material-symbols-outlined">expand_more</span>
+							</div>
+							<div id="collapse_python" class="collapse">
+								<div class="card-body p-3">
+									<h5 class="card-title">Описание:</h5>
+									<p class="card-text">
+										Моя работа с языком программирования Python началась с простых лабораторных работ.
+										В последующем мне понравилась его гибкость и кроссплатформенность. В свободное
+										время мне нравится писать простые проекты "для себя". Начинал с несложных проектов
+										на фреймворке PyGame.
+										<br>
+										С ростом популярности искусственного интеллекта я начал использовать Python для
+										создания своих собственных нейронных сетей с помощью библиотеки PyTorch. Также
+										зацепл популярную библиотеку NumPy.
+										<br>
+										Я написал множество ботов для Discord. Занимался примитивными преобразованиями графики и музыки.
+										<br>
+										Кроме того, создавал production-проекты, используя Django RESTApi, и даже
+										разработал одностраничный сайт с помощью Flask
+										<br>
+										От любви до ненависти один шаг - бесконечный цикл.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card text-white bg-secondary mb-3">
+							<div class="card-header d-flex justify-content-between align-items-center" id="sql">
+								<p class="fs-4 mb-0">SQL</p>
+								<span class="material-symbols-outlined">expand_more</span>
+							</div>
+							<div id="collapse_sql" class="collapse">
+								<div class="card-body p-3">
+									<h5 class="card-title">Опыт разработки:</h5>
+									<p class="card-text">
+										Основной СУБД, с которой я работал на протяжении всего времени, - PostgreSQL в
+										связке с JPA. В определенные периоды я также использовал SQLite и H2 для
+										выполнения элементарных задач.
+										<br>
+										Имеется опыт тонкой настройки индексов в базах данных и оптимизации SQL-запросов.
+                                        <br>
+                                        Liquibase - основная система управления версиями базы.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card text-white bg-secondary mb-3">
+							<div class="card-header d-flex justify-content-between align-items-center" id="test">
+								<p class="fs-4 mb-0">Тестирование</p>
+								<span class="material-symbols-outlined">expand_more</span>
+							</div>
+							<div id="collapse_test" class="collapse">
+								<div class="card-body p-3">
+									<h5 class="card-title">Описание:</h5>
+									<p class="card-text">
+										Одна из самых важный частей при разработке, по моему мнение - тесты.
+										<br>
+										Unit и Integration Tests это то, без чего не должен существовать любой prodaction - проект
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card text-white bg-secondary mb-3">
+							<div class="card-header d-flex justify-content-between align-items-center" id="c">
+								<p class="fs-4 mb-0">C++++</p>
+								<span class="material-symbols-outlined">expand_more</span>
+							</div>
+							<div id="collapse_c" class="collapse">
+								<div class="card-body p-3">
+									В институте изучал C# и .NET, трогал C++ и Unity.
+									<br>
+									Что-то серьездное сказать нечего.
+								</div>
+							</div>
+						</div>
+
+						<div class="card text-white bg-secondary mb-3">
+							<div class="card-header d-flex justify-content-between align-items-center" id="hide">
+								<p class="fs-4 mb-0">DO NOT OPEN</p>
+								<span class="material-symbols-outlined">expand_more</span>
+							</div>
+							<div id="collapse_hide" class="collapse">
+								<div class="card-body p-3">
+									<h5 class="card-title">Хани</h5>
+									<p class="card-text">
+										<pre>
+  ,-.       _,---._ __  / \
+ /  )    .-'       `./ /   \
+(  (   ,'            `/    /|
+ \  `-"             \'\   / |
+  `.              ,  \ \ /  |
+   /`.          ,'-`----Y   |
+  (            ;        |   '
+  |  ,-.    ,-'         |  /
+  |  | (   |            | /
+  )  |  \  `.___________|/
+  `--'   `--'
+									</pre>
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 
-		<footer class="bg-dark py-3 my-4">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark">
 			<div class="container">
-				<ul class="nav justify-content-center border-bottom pb-3 mb-3">
-					<li class="nav-item"><a href="#social" class="nav-link px-2 text-muted">Социальные сети</a></li>
-					<li class="nav-item"><a href="#wish" class="nav-link px-2 text-muted">Молитвы</a></li>
-					<li class="nav-item"><a href="#builds" class="nav-link px-2 text-muted">Сборки</a></li>
-				</ul>
-				<p class="text-center text-muted">© 2024 viad8991</p>
+				<p>footer</p>
 			</div>
 		</footer>
-
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/script.js"></script>
-	</body>
+		<script src="./js/index.js"></script>
+    </body>
 </html>
