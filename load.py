@@ -13,6 +13,8 @@ ELEMENTS_NAME = "elements.json"
 SOCIAL_NAME = "social.json"
 CHARACTERS = "characters.json"
 CHARACTERS_PATH_DIR = "../static/img/characters/"
+SOCIAL_PATH_DIR = "../static/img/social/"
+ELEMENTS_PATH_DIR = "../static/img/element/"
 
 
 def build(win_stat: dict):
@@ -23,13 +25,14 @@ def build(win_stat: dict):
     with open(os.path.join(DATA_PATH, ELEMENTS_NAME)) as f:
         elements = json.load(f)
     with open(os.path.join(DATA_PATH, SOCIAL_NAME)) as f:
-        social = json.load(f)
+        socials = json.load(f)
     with open(os.path.join(DATA_PATH, CHARACTERS)) as f:
         characters = json.load(f)
 
     result = {}
     for key, value in elements.items():
         value["characters"] = []
+        value["src"] = ELEMENTS_PATH_DIR + value["src"]
         result[key] = value
 
     characters = dict(sorted(characters.items(), key=lambda x: x[1]["ru"]))
@@ -38,9 +41,12 @@ def build(win_stat: dict):
         values["href"] = CHARACTERS_PATH_DIR + values["href"]
         result[values["element"]]["characters"].append({key: values})
 
+    for key, values in socials.items():
+        socials[key]["src"] = SOCIAL_PATH_DIR + values["src"]
+
     render_data = {
         "win_stat": win_stat,
-        "social": social,
+        "social": socials,
         "data": result
     }
     content = jinja.get_template(GI_TEMPLATE).render(**render_data)
