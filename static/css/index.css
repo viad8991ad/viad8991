@@ -48,11 +48,20 @@ body {
 
 .show-more-label:after {
     content: "Show More";
-	display: block;
+    position: absolute;
+    right: 0;
+    padding: 0 30px 0;
 }
 
-#timeline_collapse:checked + .show-more-label:after {
+#timeline_collapse:checked ~ .show-more-label:after {
     content: "Show Less";
+    position: absolute;
+    right: 0;
+    padding: 0 30px 0;
+}
+
+#timeline_collapse:checked ~ .timeline {
+    max-height: 100%;
 }
 
 .timeline {
@@ -62,10 +71,6 @@ body {
 
 	/* убил планые переходы, оно не работает из-за #timeline_collapse:not(:checked) + .timeline::after */
     transition: max-height 0.3s ease;
-}
-
-#timeline_collapse:checked ~ .timeline {
-    max-height: 100%;
 }
 
 #timeline_collapse:not(:checked) + .timeline::after {
