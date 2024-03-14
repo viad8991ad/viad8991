@@ -181,6 +181,37 @@
 										Amazon Netty, Amazon S3
 										<br>
 										Vaadin
+										<br>
+										<br>
+										Код с самой интересной реализацией (powered by @...):
+										<code class="text-white">
+											<pre>
+public void setContract(EditDto dto, Integer contractorTypeId) {
+	var isClient = ...;
+	var contractor = ...;
+
+	BiFunction<Object, Object, Object> substitute = (o1, o2) -> o1 != null ? o1 : o2;
+
+	Function<Organization, Integer> getOrganizationId = org -> { ... };
+
+	Supplier<Contract> findContract = () -> { ... };
+
+	Consumer<Contract> setQuoteFields = contract -> { ... };
+
+	Runnable clearQuoteFields = () -> { ... };
+
+	if (contractor != null) {
+		var contract = findContract.get();
+		if (contract != null) {
+			setQuoteFields.accept(contract);
+		} else {
+			clearQuoteFields.run();
+		}
+	}
+}
+													</pre>
+										</code>
+									</p>
 									</p>
 								</div>
 							</div>
